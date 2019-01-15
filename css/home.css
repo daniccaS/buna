@@ -20,7 +20,7 @@ body {
         padding: 15px 15px;
         border-radius: 50%;
         font-size: 33px; }
-      body header #logo .logoText {
+      body header #logo .logo__text {
         text-align: center; }
     body header .nav {
       margin-top: 3%; }
@@ -30,18 +30,18 @@ body {
         font-weight: bold; }
         body header .nav .nav-link:hover {
           color: darkred; }
-    body header .headerBtn {
+    body header .header__btn {
       display: flex;
       justify-content: center;
       margin: 3%; }
-      body header .headerBtn button {
+      body header .header__btn .btn--grey {
         border: 1px solid grey;
         background-color: transparent;
         margin: 10px;
         padding: 2px 10px;
         border-radius: 4px;
         outline: none; }
-        body header .headerBtn button i {
+        body header .header__btn .btn--grey i {
           color: grey; }
   body #portfolio {
     width: 100%;
@@ -49,30 +49,30 @@ body {
     text-align: center;
     margin-bottom: 5%;
     display: block; }
-    body #portfolio .firstBox {
+    body #portfolio .portfolio__box-first {
       display: flex;
       flex-direction: row;
       width: 100%; }
       @media (max-width: 990px) {
-        body #portfolio .firstBox {
+        body #portfolio .portfolio__box-first {
           display: block; } }
-      body #portfolio .firstBox .leftSide {
+      body #portfolio .portfolio__box-first .box-left {
         width: 50%; }
         @media (max-width: 990px) {
-          body #portfolio .firstBox .leftSide {
+          body #portfolio .portfolio__box-first .box-left {
             display: block;
             width: 100%; } }
-        body #portfolio .firstBox .leftSide .top {
+        body #portfolio .portfolio__box-first .box-left .box-left-top {
           display: flex; }
-          body #portfolio .firstBox .leftSide .top .imgBox1 {
+          body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .firstBox .leftSide .top .imgBox1 img {
+            body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .firstBox .leftSide .top .imgBox1 .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -85,7 +85,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText {
+            body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -95,47 +95,50 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText p {
+              body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText p span {
+                body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText p span i {
+                  body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText h1 {
+              body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .firstBox .leftSide .top .imgBox1:hover .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .firstBox .leftSide .top .imgBox1:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .firstBox .leftSide .top .imgBox1:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-        body #portfolio .firstBox .leftSide .bottom {
+              body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1:hover .overlay .overlay__btn {
+                display: block; }
+        body #portfolio .portfolio__box-first .box-left .box-left-bottom {
           display: flex; }
           @media (max-width: 736px) {
-            body #portfolio .firstBox .leftSide .bottom {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom {
               display: block; } }
-          body #portfolio .firstBox .leftSide .bottom .imgBox2 {
+          body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox2 img {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -148,7 +151,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -158,42 +161,45 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText p {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText p span {
+                body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText p span i {
+                  body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText h1 {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox2:hover .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox2:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox2:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-          body #portfolio .firstBox .leftSide .bottom .imgBox3 {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2:hover .overlay .overlay__btn {
+                display: block; }
+          body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox3 img {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -206,7 +212,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -216,54 +222,57 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText p {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText p span {
+                body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText p span i {
+                  body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText h1 {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox3:hover .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox3:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox3:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-      body #portfolio .firstBox .rightSide {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3:hover .overlay .overlay__btn {
+                display: block; }
+      body #portfolio .portfolio__box-first .box-right {
         display: block;
         width: 50%; }
         @media (max-width: 990px) {
-          body #portfolio .firstBox .rightSide {
+          body #portfolio .portfolio__box-first .box-right {
             width: 100%; } }
-        body #portfolio .firstBox .rightSide .top {
+        body #portfolio .portfolio__box-first .box-right .box-right-top {
           display: flex;
           flex-direction: row; }
           @media (max-width: 736px) {
-            body #portfolio .firstBox .rightSide .top {
+            body #portfolio .portfolio__box-first .box-right .box-right-top {
               display: block; } }
-          body #portfolio .firstBox .rightSide .top .imgBox4 {
+          body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .firstBox .rightSide .top .imgBox4 img {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .firstBox .rightSide .top .imgBox4 .overlay {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -276,7 +285,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -286,42 +295,45 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText p {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText p span {
+                body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText p span i {
+                  body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText h1 {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .firstBox .rightSide .top .imgBox4:hover .overlay {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .firstBox .rightSide .top .imgBox4:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .firstBox .rightSide .top .imgBox4:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-          body #portfolio .firstBox .rightSide .top .imgBox5 {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4:hover .overlay .overlay__btn {
+                display: block; }
+          body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .firstBox .rightSide .top .imgBox5 img {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .firstBox .rightSide .top .imgBox5 .overlay {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -334,7 +346,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -344,42 +356,45 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText p {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText p span {
+                body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText p span i {
+                  body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText h1 {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .firstBox .rightSide .top .imgBox5:hover .overlay {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .firstBox .rightSide .top .imgBox5:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .firstBox .rightSide .top .imgBox5:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-        body #portfolio .firstBox .rightSide .bottom .imgBox6 {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5:hover .overlay .overlay__btn {
+                display: block; }
+        body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 {
           width: 100%;
           height: auto;
           position: relative; }
-          body #portfolio .firstBox .rightSide .bottom .imgBox6 img {
+          body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 img {
             width: 100%;
             height: 400px;
             object-fit: cover; }
-          body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlay {
+          body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -392,7 +407,7 @@ body {
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText {
+          body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -402,56 +417,59 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText p {
+            body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText p span {
+              body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__text p span {
                 font-size: 10px; }
-                body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText p span i {
+                body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText h1 {
+            body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__text h1 {
               font-weight: bold; }
-          body #portfolio .firstBox .rightSide .bottom .imgBox6:hover .overlay {
+          body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            body #portfolio .firstBox .rightSide .bottom .imgBox6:hover .overlay .overlayText {
+            body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6:hover .overlay .overlay__text {
               display: block; }
-            body #portfolio .firstBox .rightSide .bottom .imgBox6:hover .overlay .overlayButton {
-              margin: auto;
-              font-size: 25px;
-              font-weight: bold;
-              background-color: red;
-              color: white;
-              padding: 10 15%;
-              border: 1px solid darkred;
-              box-shadow: 2px 2px 2px black;
-              border-radius: 5px;
-              outline: none; }
-    body #portfolio .secondBox {
+            body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6:hover .overlay .overlay__btn {
+              display: block; }
+    body #portfolio .portfolio__box-second {
       width: 100%;
       display: flex;
       padding-bottom: 5%; }
       @media (max-width: 990px) {
-        body #portfolio .secondBox {
+        body #portfolio .portfolio__box-second {
           display: block;
           width: 100%; } }
-      body #portfolio .secondBox .leftSide {
+      body #portfolio .portfolio__box-second .box-left {
         width: 50%;
         display: block; }
         @media (max-width: 990px) {
-          body #portfolio .secondBox .leftSide {
+          body #portfolio .portfolio__box-second .box-left {
             width: 100%; } }
-        body #portfolio .secondBox .leftSide .top .imgBox7 {
+        body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 {
           width: 100%;
           height: auto;
           position: relative; }
-          body #portfolio .secondBox .leftSide .top .imgBox7 img {
+          body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 img {
             width: 100%;
             height: 400px;
             object-fit: cover; }
-          body #portfolio .secondBox .leftSide .top .imgBox7 .overlay {
+          body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -464,7 +482,7 @@ body {
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText {
+          body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -474,47 +492,111 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText p {
+            body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText p span {
+              body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__text p span {
                 font-size: 10px; }
-                body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText p span i {
+                body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText h1 {
+            body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__text h1 {
               font-weight: bold; }
-          body #portfolio .secondBox .leftSide .top .imgBox7:hover .overlay {
+          body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            body #portfolio .secondBox .leftSide .top .imgBox7:hover .overlay .overlayText {
+            body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7:hover .overlay .overlay__text {
               display: block; }
-            body #portfolio .secondBox .leftSide .top .imgBox7:hover .overlay .overlayButton {
+            body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7:hover .overlay .overlay__btn {
+              display: block; }
+        body #portfolio .portfolio__box-second .box-left .box-left-bottom {
+          display: flex; }
+          @media (max-width: 736px) {
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom {
+              display: block; } }
+          body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 {
+            width: 100%;
+            height: auto;
+            position: relative; }
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover; }
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay {
+              position: absolute;
+              display: block;
               margin: auto;
-              font-size: 25px;
+              left: 0px;
+              top: 0px;
+              bottom: 0px;
+              right: 0px;
+              width: 100%;
+              height: auto;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: red; }
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__text {
+              display: none;
+              margin: auto;
+              background-color: transparent;
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center; }
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__text p {
+                display: block;
+                margin: 10px;
+                font-size: auto; }
+                body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__text p span {
+                  font-size: 10px; }
+                  body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__text p span i {
+                    margin: 10px;
+                    color: white; }
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__text h1 {
+                font-weight: bold; }
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
               font-weight: bold;
               background-color: red;
               color: white;
-              padding: 10 15%;
+              padding: 3% 5%;
               border: 1px solid darkred;
               box-shadow: 2px 2px 2px black;
               border-radius: 5px;
               outline: none; }
-        body #portfolio .secondBox .leftSide .bottom {
-          display: flex; }
-          @media (max-width: 736px) {
-            body #portfolio .secondBox .leftSide .bottom {
-              display: block; } }
-          body #portfolio .secondBox .leftSide .bottom .imgBox8 {
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8:hover .overlay {
+              opacity: .9;
+              transition: opacity .5s; }
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8:hover .overlay .overlay__text {
+                display: block; }
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8:hover .overlay .overlay__btn {
+                display: block; }
+          body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox8 img {
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlay {
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -527,7 +609,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText {
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -537,106 +619,51 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText p {
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText p span {
+                body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText p span i {
+                  body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText h1 {
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox8:hover .overlay {
-              opacity: .9;
-              transition: opacity .5s; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox8:hover .overlay .overlayText {
-                display: block; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox8:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-          body #portfolio .secondBox .leftSide .bottom .imgBox9 {
-            width: 100%;
-            height: auto;
-            position: relative; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox9 img {
-              width: 100%;
-              height: 400px;
-              object-fit: cover; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlay {
-              position: absolute;
-              display: block;
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__btn {
+              display: hidden;
               margin: auto;
-              left: 0px;
-              top: 0px;
-              bottom: 0px;
-              right: 0px;
-              width: 100%;
-              height: auto;
-              opacity: 0;
-              transition: .5s ease;
-              background-color: red; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText {
-              display: none;
-              margin: auto;
-              background-color: transparent;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
               color: white;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              text-align: center; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText p {
-                display: block;
-                margin: 10px;
-                font-size: auto; }
-                body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText p span {
-                  font-size: 10px; }
-                  body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText p span i {
-                    margin: 10px;
-                    color: white; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText h1 {
-                font-weight: bold; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox9:hover .overlay {
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox9:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox9:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-      body #portfolio .secondBox .rightSide {
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9:hover .overlay .overlay__btn {
+                display: block; }
+      body #portfolio .portfolio__box-second .box-right {
         width: 50%; }
         @media (max-width: 990px) {
-          body #portfolio .secondBox .rightSide {
+          body #portfolio .portfolio__box-second .box-right {
             display: block;
             width: 100%; } }
-        body #portfolio .secondBox .rightSide .imgBox10 {
+        body #portfolio .portfolio__box-second .box-right .img-box10 {
           width: 100%;
           height: auto;
           position: relative; }
-          body #portfolio .secondBox .rightSide .imgBox10 img {
+          body #portfolio .portfolio__box-second .box-right .img-box10 img {
             width: 100%;
             height: 800px;
             object-fit: cover; }
-          body #portfolio .secondBox .rightSide .imgBox10 .overlay {
+          body #portfolio .portfolio__box-second .box-right .img-box10 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -649,7 +676,7 @@ body {
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          body #portfolio .secondBox .rightSide .imgBox10 .overlayText {
+          body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -659,62 +686,66 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            body #portfolio .secondBox .rightSide .imgBox10 .overlayText p {
+            body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              body #portfolio .secondBox .rightSide .imgBox10 .overlayText p span {
+              body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__text p span {
                 font-size: 10px; }
-                body #portfolio .secondBox .rightSide .imgBox10 .overlayText p span i {
+                body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            body #portfolio .secondBox .rightSide .imgBox10 .overlayText h1 {
+            body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__text h1 {
               font-weight: bold; }
-          body #portfolio .secondBox .rightSide .imgBox10:hover .overlay {
+          body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          body #portfolio .portfolio__box-second .box-right .img-box10:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            body #portfolio .secondBox .rightSide .imgBox10:hover .overlay .overlayText {
+            body #portfolio .portfolio__box-second .box-right .img-box10:hover .overlay .overlay__text {
               display: block; }
-            body #portfolio .secondBox .rightSide .imgBox10:hover .overlay .overlayButton {
-              margin: auto;
-              font-size: 25px;
-              font-weight: bold;
-              background-color: red;
-              color: white;
-              padding: 10 15%;
-              border: 1px solid darkred;
-              box-shadow: 2px 2px 2px black;
-              border-radius: 5px;
-              outline: none; }
+            body #portfolio .portfolio__box-second .box-right .img-box10:hover .overlay .overlay__btn {
+              display: block; }
   body #about {
     background-color: #EFEFEF;
     width: 100%;
-    padding-bottom: 5%; }
-    body #about .aboutTitle {
+    padding-bottom: 5%;
+    padding-top: 5%; }
+    body #about .about__title {
       text-align: center;
       margin: auto; }
-    body #about .aboutText {
+    body #about .about__text {
       width: 100%;
       text-align: center;
       margin: auto;
       padding: 1% 25%; }
-    body #about #aboutBtn {
+    body #about #about__btn {
       display: flex;
       justify-content: center;
       text-align: center;
       margin: auto;
       padding-bottom: 5%; }
       @media (max-width: 410px) {
-        body #about #aboutBtn {
+        body #about #about__btn {
           flex-direction: column;
           width: 50%; } }
-      body #about #aboutBtn .aboutMore {
+      body #about #about__btn .about__btn--grey {
         margin: 10px;
         padding: 0px 15px;
         border: 1px solid grey;
         box-shadow: 2px 2px 2px;
         border-radius: 4px; }
-      body #about #aboutBtn .aboutServices {
+      body #about #about__btn .about__btn--red {
         margin: 10px;
         background-color: darkred;
         color: white;
@@ -731,18 +762,18 @@ body {
         body #about #links {
           flex-direction: column;
           align-items: center; } }
-      body #about #links .aboutLinks {
+      body #about #links .links__element {
         width: 15%;
         display: flex;
         margin: auto; }
         @media (max-width: 990px) {
-          body #about #links .aboutLinks {
+          body #about #links .links__element {
             padding-bottom: 10%; } }
         @media (max-width: 410px) {
-          body #about #links .aboutLinks {
+          body #about #links .links__element {
             display: block;
             margin: auto; } }
-        body #about #links .aboutLinks .aboutLink {
+        body #about #links .links__element .links__element__btn {
           padding: 25px 25px;
           display: flex;
           justify-content: center;
@@ -752,18 +783,18 @@ body {
           border-radius: 50%;
           margin: auto; }
           @media (max-width: 410px) {
-            body #about #links .aboutLinks .aboutLink {
+            body #about #links .links__element .links__element__btn {
               padding: 15px 25px; } }
-        body #about #links .aboutLinks p {
+        body #about #links .links__element p {
           color: grey;
           margin-left: 5px; }
-          body #about #links .aboutLinks p i {
+          body #about #links .links__element p i {
             margin: auto; }
-          body #about #links .aboutLinks p span {
+          body #about #links .links__element p span {
             font-weight: bold;
             color: black;
             font-size: 22px; }
-  body #footerTop {
+  body #footer-top {
     width: 100%;
     background-color: darkred;
     padding: 5%;
@@ -771,19 +802,19 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto; }
-    body #footerTop h2 {
+    body #footer-top h2 {
       font-size: 40px;
       margin: auto;
       text-align: center;
       padding-bottom: 30px;
       color: white; }
-    body #footerTop p {
+    body #footer-top p {
       width: 50%;
       color: grey;
       text-align: center;
       margin: auto;
       padding: 2% 0; }
-    body #footerTop button {
+    body #footer-top button {
       margin-top: 2%;
       font-size: 10px;
       font-weight: bold;
@@ -795,16 +826,16 @@ body {
       border-radius: 5px;
       outline: none;
       margin: auto; }
-    body #footerTop .form {
+    body #footer-top .form {
       width: 100%; }
-      body #footerTop .form .navbar {
+      body #footer-top .form .navbar {
         width: 100%;
         background-color: darkred !important;
         display: flex;
         justify-content: center; }
-        body #footerTop .form .navbar input::placeholder {
+        body #footer-top .form .navbar input::placeholder {
           font-size: 20px; }
-        body #footerTop .form .navbar button {
+        body #footer-top .form .navbar button {
           margin: auto;
           padding: 6px 20px;
           font-size: 15px;
@@ -814,9 +845,9 @@ body {
   body footer {
     padding: 3%;
     text-align: center; }
-    body footer .socialMediaLinks {
+    body footer .social__icons {
       padding: 20px; }
-      body footer .socialMediaLinks a {
+      body footer .social__icons a {
         color: grey;
         margin: 10px; }
     body footer .copyright {

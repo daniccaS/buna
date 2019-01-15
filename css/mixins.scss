@@ -18,7 +18,7 @@
 	   			border-radius: 50%;
 	   			font-size: 33px;
 			}
-			.logoText{
+			.logo__text{
 			text-align:center;
 			}
 		}	
@@ -29,35 +29,32 @@
 				color:black;
 				text-decoration:none;
 				font-weight:bold;
-
 				&:hover{
 					color:$redBackground;
 				}
 			}
 		}
-		.headerBtn{
+		.header__btn{
 			display:flex;
 			justify-content:center;
 			margin:3%;
 
-			button{
+			.btn--grey{
 				border:1px solid grey ;
 				background-color:transparent;
 				margin:10px;
 				padding:2px 10px;
 				border-radius:4px;
 				outline:none;
-
 				i{
-					color:grey;
+				color:grey;
 				}
 			}
 		}
 	}
 }
 
-@mixin Overlay {
-	
+@mixin Overlay {	
 	.overlay{
 		position:absolute;
 		display:block;
@@ -72,7 +69,7 @@
 		transition: .5s ease;
 		background-color: red;			
 		}	
-		.overlayText{
+		.overlay__text{
 			display:none;
 			margin:auto;
 			background-color:transparent;
@@ -98,30 +95,32 @@
 		 	font-weight:bold;
 		 	}
 		}
+		.overlay__btn{
+		display:hidden;
+		margin:auto;
+		  font-size: 15px;
+		  font-weight: bold;
+		  background-color: red;
+		  color: white;
+		  padding:3% 5%;
+		  border: 1px solid $redBackground;
+		  box-shadow: 2px 2px 2px black;
+		  border-radius: 5px;
+		  outline: none;
+		}
 		&:hover{
 			.overlay{
 				opacity: .9;
 		      	transition: opacity .5s;
-		      	.overlayText{
+		      	.overlay__text{
 		      		display:block;
 		      	}
-		      	.overlayButton{
-		      		margin:auto;
-				    font-size: 25px;
-				    font-weight: bold;
-				    background-color: red;
-				    color: white;
-				    padding:10 15%;
-				    border: 1px solid $redBackground;
-				    box-shadow: 2px 2px 2px black;
-				    border-radius: 5px;
-				    outline: none;
+		      	.overlay__btn{
+					display: block;
 		      	}
 			}
 		}
 	}
-
-
 @mixin intro {
 	.intro{
 		background-color:$redBackground;
@@ -134,7 +133,6 @@
 		   }
 	} 
 }
-
 @mixin Links{
 	#links{
 		width:90%;
@@ -146,8 +144,7 @@
 			flex-direction: column;
 			align-items:center;
 		}
-
-		.aboutLinks{
+		.links__element{
 			width:15%;
 			display:flex;
 			margin:auto;
@@ -158,8 +155,7 @@
 				display:block;
 				margin:auto;
 			}
-
-			.aboutLink{
+			.links__element__btn{
 				padding:25px 25px;
 				display:flex;
 				justify-content: center;
@@ -209,9 +205,7 @@
     	 flex-direction:column;
     	 align-items: center;
     }
-  
-
-    .icon{
+    .partners-item{
     	display:flex;
     	flex-wrap:wrap;
     	width:10%;
@@ -229,7 +223,7 @@
 }
 
 @mixin footerTop {
-	#footerTop{
+	#footer-top{
 	width:100%;
 	background-color:darkred;
 	padding:5%;
@@ -297,7 +291,7 @@
 		padding: 3%;
     	text-align: center;
 
-    	.socialMediaLinks{
+    	.social__icons{
     		padding:20px;
 			a{
 				color:grey;

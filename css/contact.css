@@ -7,7 +7,7 @@
       flex-direction: column;
       align-items: center;
       margin: auto; } }
-  #contact .leftSide {
+  #contact .contact-left {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -15,17 +15,17 @@
     justify-content: center;
     padding: 8%; }
     @media (max-width: 736px) {
-      #contact .leftSide {
+      #contact .contact-left {
         width: 100%;
         text-align: center; } }
-    #contact .leftSide .formTitle {
+    #contact .contact-left .contact-left__title {
       width: 100%; }
-      #contact .leftSide .formTitle p {
+      #contact .contact-left .contact-left__title p {
         font-size: 20px; }
-        #contact .leftSide .formTitle p:nth-child(1) {
+        #contact .contact-left .contact-left__title p:nth-child(1) {
           margin-left: 20px;
           font-size: 15px; }
-          #contact .leftSide .formTitle p:nth-child(1):before {
+          #contact .contact-left .contact-left__title p:nth-child(1):before {
             content: "\2022";
             color: darkred;
             font-size: 20px;
@@ -33,11 +33,11 @@
             display: inline-block;
             width: 10px;
             margin-left: -1em; }
-        #contact .leftSide .formTitle p span {
+        #contact .contact-left .contact-left__title p span {
           font-weight: bold; }
-    #contact .leftSide .form {
+    #contact .contact-left .form {
       width: 100%; }
-  #contact .rightSide {
+  #contact .contact-right {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -45,12 +45,12 @@
     padding: 10%;
     position: relative; }
     @media (max-width: 736px) {
-      #contact .rightSide {
+      #contact .contact-right {
         width: 100%;
         text-align: center; } }
-    #contact .rightSide .info .infoChild {
+    #contact .contact-right .info .info-item {
       margin: 30px; }
-      #contact .rightSide .info .infoChild p:nth-child(2) {
+      #contact .contact-right .info .info-item p:nth-child(2) {
         font-weight: bold; }
 
 /*# sourceMappingURL=contact.css.map */

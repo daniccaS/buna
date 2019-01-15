@@ -18,25 +18,23 @@ body{
 	margin-bottom: 5%;
 	display:block;
 	
-	.firstBox{
+	.portfolio__box-first{
 		display:flex;
 		flex-direction:row;
 		width:100%;
 		@media (max-width: 990px){
 		 	display:block;
 		}
-	
-		.leftSide{
+		.box-left{
 			width:50%;
 			@media (max-width: 990px){
 			 	display:block;
 			 	width:100%;
 			}
-
-			.top{
+			.box-left-top{
 				display:flex;
 
-				.imgBox1{
+				.img-box1{
 					width:100%;
 					height:auto;
 					position:relative;
@@ -48,13 +46,12 @@ body{
 					@include Overlay;
 				}
 			}
-			.bottom{
+			.box-left-bottom{
 				display:flex;
 				@media (max-width: 736px){
 			 	display:block;
 				}
-
-				.imgBox2{
+				.img-box2{
 					width:100%;
 					height:auto;
 					position:relative;
@@ -65,7 +62,7 @@ body{
 					}
 					@include Overlay;
 				}
-				.imgBox3{
+				.img-box3{
 					width:100%;
 					height:auto;
 					position:relative;
@@ -78,25 +75,19 @@ body{
 				}
 			}
 		}
-
-		.rightSide{
+		.box-right{
 			display:block;
 			width:50%;
 			@media (max-width: 990px){
 			 	width:100%;
 			}
-			
-
-			.top{
+			.box-right-top{
 				display:flex;
 				flex-direction:row;
 				@media (max-width: 736px){
 			 		display:block;
 				}
-				
-
-
-				.imgBox4{
+				.img-box4{
 					width:100%;
 					height:auto;
 					position:relative;
@@ -107,8 +98,7 @@ body{
 					}
 					@include Overlay;
 				}
-
-				.imgBox5{
+				.img-box5{
 					width:100%;
 					height:auto;
 					position:relative;
@@ -120,9 +110,8 @@ body{
 					@include Overlay;
 				}
 			}
-			.bottom{
-
-				.imgBox6{
+			.box-right-bottom{
+				.img-box6{
 					width:100%;
 					height:auto;
 					position:relative;
@@ -137,7 +126,7 @@ body{
 		}
 	}
 
-	.secondBox{
+	.portfolio__box-second{
 		width:100%;
 		display:flex;
 		padding-bottom:5%;
@@ -145,17 +134,14 @@ body{
 		 	display:block;
 		 	width:100%;
 		}
-
-		.leftSide{
+		.box-left{
 			width:50%;
 			display:block;
 			@media (max-width: 990px){
 			 	width:100%;
 			}
-			
-			.top{
-				
-				.imgBox7{
+			.box-left-top{
+				.img-box7{
 					width:100%;
 					height:auto;
 					position:relative;
@@ -167,13 +153,13 @@ body{
 					@include Overlay;
 				}
 			}
-			.bottom{
+			.box-left-bottom{
 				display:flex;
 				@media (max-width: 736px){
 			 		display:block;
 				}
 				
-				.imgBox8{
+				.img-box8{
 					width:100%;
 					height:auto;
 					position:relative;
@@ -185,7 +171,7 @@ body{
 					@include Overlay;
 				}
 
-				.imgBox9{
+				.img-box9{
 					width:100%;
 					height:auto;
 					position:relative;
@@ -199,15 +185,13 @@ body{
 				}
 			}
 		}
-
-		.rightSide{
+		.box-right{
 			width:50%;
 			@media (max-width: 990px){
 			 	display:block;
 			 	width:100%;
 			}
-			
-			.imgBox10{
+			.img-box10{
 				width:100%;
 				height:auto;
 				position:relative;
@@ -226,19 +210,19 @@ body{
 	background-color:$greyBackground;
 	width:100%;
 	padding-bottom:5%;
+	padding-top:5%;
 
-	.aboutTitle{
+	.about__title{
 		text-align:center;
 		margin:auto;
 	}
-	.aboutText{
+	.about__text{
 		width:100%;
 		text-align:center;
 		margin:auto;
 		padding:1% 25%;
-
 	}
-	#aboutBtn{
+	#about__btn{
 		display:flex;
 		justify-content:center;
 		text-align:center;
@@ -246,26 +230,22 @@ body{
 		padding-bottom:5%;
 		@media (max-width:410px){
 				flex-direction: column;
-				width:50%;
-				
+				width:50%;	
 			}
-
-		.aboutMore{
+		.about__btn--grey{
 			margin:10px;
 			padding:0px 15px;
 			border:1px solid grey ;
 			box-shadow:2px 2px 2px;
 			border-radius:4px;
-
 		}
-		.aboutServices{
+		.about__btn--red{
 			margin:10px;
 			background-color:$redBackground;
 			color:white;
 			border:1px solid red ;
 			box-shadow: 2px 2px 2px black;
 			border-radius:4px;
-
 		}
 	}
 

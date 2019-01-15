@@ -6,35 +6,35 @@
   .intro h1 {
     font-weight: bold; }
 
-#aboutUs {
+#about__section {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: auto;
   padding-bottom: 5%; }
   @media screen and (max-width: 768px) {
-    #aboutUs {
+    #about__section {
       display: block;
       width: 100%;
       margin: auto; } }
-  #aboutUs .aboutUsLeft {
+  #about__section .about-left {
     width: 50%;
     padding: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
     @media screen and (max-width: 768px) {
-      #aboutUs .aboutUsLeft {
+      #about__section .about-left {
         display: block;
         width: 100%;
         margin: auto; } }
-    #aboutUs .aboutUsLeft .aboutUsText {
+    #about__section .about-left .about-left__Text {
       font-size: 21px;
       padding: 5% 0%; }
-      #aboutUs .aboutUsLeft .aboutUsText p {
+      #about__section .about-left .about-left__Text p {
         margin-left: 20px;
         font-size: 15px; }
-        #aboutUs .aboutUsLeft .aboutUsText p:before {
+        #about__section .about-left .about-left__Text p:before {
           content: "\2022";
           color: darkred;
           font-size: 20px;
@@ -42,10 +42,10 @@
           display: inline-block;
           width: 10px;
           margin-left: -1em; }
-      #aboutUs .aboutUsLeft .aboutUsText span {
+      #about__section .about-left .about-left__Text span {
         font-weight: bold;
         color: black; }
-    #aboutUs .aboutUsLeft button {
+    #about__section .about-left button {
       width: 20%;
       font-size: 10px;
       font-weight: bold;
@@ -56,24 +56,67 @@
       box-shadow: 2px 2px 2px black;
       border-radius: 5px; }
       @media screen and (max-width: 768px) {
-        #aboutUs .aboutUsLeft button {
+        #about__section .about-left button {
           display: block;
           width: 100%;
           margin: auto; } }
-  #aboutUs .skills {
+  #about__section .skills {
     width: 50%;
     padding: 5% 5%;
     margin: auto; }
-    #aboutUs .skills p {
+    #about__section .skills p {
       margin: 0;
       font-size: 15px; }
-    #aboutUs .skills .progress .progress-bar {
+    #about__section .skills .progress .progress-bar {
       padding: 0px;
       margin: 0px;
       background-color: red; }
 
-#about {
-  padding: 10% 0%; }
+#stats {
+  padding: 10% 0%;
+  background-color: #EFEFEF; }
+  #stats #links {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto; }
+    @media (max-width: 990px) {
+      #stats #links {
+        flex-direction: column;
+        align-items: center; } }
+    #stats #links .links__element {
+      width: 15%;
+      display: flex;
+      margin: auto; }
+      @media (max-width: 990px) {
+        #stats #links .links__element {
+          padding-bottom: 10%; } }
+      @media (max-width: 410px) {
+        #stats #links .links__element {
+          display: block;
+          margin: auto; } }
+      #stats #links .links__element .links__element__btn {
+        padding: 25px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darkred;
+        color: white;
+        border-radius: 50%;
+        margin: auto; }
+        @media (max-width: 410px) {
+          #stats #links .links__element .links__element__btn {
+            padding: 15px 25px; } }
+      #stats #links .links__element p {
+        color: grey;
+        margin-left: 5px; }
+        #stats #links .links__element p i {
+          margin: auto; }
+        #stats #links .links__element p span {
+          font-weight: bold;
+          color: black;
+          font-size: 22px; }
 
 #team {
   display: flex;
@@ -82,25 +125,25 @@
   @media screen and (max-width: 1200px) {
     #team {
       flex-direction: column; } }
-  #team .leftSide {
+  #team .team-left {
     width: 50%;
     margin: auto; }
     @media screen and (max-width: 1200px) {
-      #team .leftSide {
+      #team .team-left {
         width: 100%;
         text-align: center;
         margin: auto; } }
-    #team .leftSide .content {
+    #team .team-left .content {
       display: flex;
       flex-direction: column;
       padding: 10% 0%; }
-      #team .leftSide .content p {
+      #team .team-left .content p {
         font-size: 20px;
-        margin-left: 120px; }
-        #team .leftSide .content p:nth-child(1) {
-          margin-left: 130px;
+        margin-left: 190px; }
+        #team .team-left .content p:nth-child(1) {
+          margin-left: 190px;
           font-size: 15px; }
-          #team .leftSide .content p:nth-child(1):before {
+          #team .team-left .content p:nth-child(1):before {
             content: "\2022";
             color: darkred;
             font-size: 20px;
@@ -109,34 +152,34 @@
             width: 10px;
             margin-left: -1em; }
         @media screen and (max-width: 1200px) {
-          #team .leftSide .content p {
+          #team .team-left .content p {
             flex-direction: column;
             text-align: center;
             margin: auto;
             justify-content: center;
             word-wrap: break-word; }
-            #team .leftSide .content p:nth-child(1) {
+            #team .team-left .content p:nth-child(1) {
               margin: auto; } }
-      #team .leftSide .content span {
+      #team .team-left .content span {
         font-weight: bold; }
-      #team .leftSide .content .teamImages {
+      #team .team-left .content .team__images {
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin: auto; }
         @media screen and (max-width: 768px) {
-          #team .leftSide .content .teamImages {
+          #team .team-left .content .team__images {
             flex-direction: column; } }
-        #team .leftSide .content .teamImages .imgBox1 {
+        #team .team-left .content .team__images .img-box1 {
           margin: 15px;
           height: auto;
           position: relative; }
-          #team .leftSide .content .teamImages .imgBox1 img {
+          #team .team-left .content .team__images .img-box1 img {
             object-fit: cover;
             width: 150px;
             height: 150px;
             border-radius: 10px; }
-          #team .leftSide .content .teamImages .imgBox1 .overlay {
+          #team .team-left .content .team__images .img-box1 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -149,7 +192,7 @@
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          #team .leftSide .content .teamImages .imgBox1 .overlayText {
+          #team .team-left .content .team__images .img-box1 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -159,43 +202,46 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            #team .leftSide .content .teamImages .imgBox1 .overlayText p {
+            #team .team-left .content .team__images .img-box1 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              #team .leftSide .content .teamImages .imgBox1 .overlayText p span {
+              #team .team-left .content .team__images .img-box1 .overlay__text p span {
                 font-size: 10px; }
-                #team .leftSide .content .teamImages .imgBox1 .overlayText p span i {
+                #team .team-left .content .team__images .img-box1 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            #team .leftSide .content .teamImages .imgBox1 .overlayText h1 {
+            #team .team-left .content .team__images .img-box1 .overlay__text h1 {
               font-weight: bold; }
-          #team .leftSide .content .teamImages .imgBox1:hover .overlay {
+          #team .team-left .content .team__images .img-box1 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          #team .team-left .content .team__images .img-box1:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            #team .leftSide .content .teamImages .imgBox1:hover .overlay .overlayText {
+            #team .team-left .content .team__images .img-box1:hover .overlay .overlay__text {
               display: block; }
-            #team .leftSide .content .teamImages .imgBox1:hover .overlay .overlayButton {
-              margin: auto;
-              font-size: 25px;
-              font-weight: bold;
-              background-color: red;
-              color: white;
-              padding: 10 15%;
-              border: 1px solid darkred;
-              box-shadow: 2px 2px 2px black;
-              border-radius: 5px;
-              outline: none; }
-        #team .leftSide .content .teamImages .imgBox2 {
+            #team .team-left .content .team__images .img-box1:hover .overlay .overlay__btn {
+              display: block; }
+        #team .team-left .content .team__images .img-box2 {
           margin: 15px;
           height: auto;
           position: relative; }
-          #team .leftSide .content .teamImages .imgBox2 img {
+          #team .team-left .content .team__images .img-box2 img {
             object-fit: cover;
             width: 150px;
             height: 150px;
             border-radius: 10px; }
-          #team .leftSide .content .teamImages .imgBox2 .overlay {
+          #team .team-left .content .team__images .img-box2 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -208,7 +254,7 @@
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          #team .leftSide .content .teamImages .imgBox2 .overlayText {
+          #team .team-left .content .team__images .img-box2 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -218,43 +264,46 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            #team .leftSide .content .teamImages .imgBox2 .overlayText p {
+            #team .team-left .content .team__images .img-box2 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              #team .leftSide .content .teamImages .imgBox2 .overlayText p span {
+              #team .team-left .content .team__images .img-box2 .overlay__text p span {
                 font-size: 10px; }
-                #team .leftSide .content .teamImages .imgBox2 .overlayText p span i {
+                #team .team-left .content .team__images .img-box2 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            #team .leftSide .content .teamImages .imgBox2 .overlayText h1 {
+            #team .team-left .content .team__images .img-box2 .overlay__text h1 {
               font-weight: bold; }
-          #team .leftSide .content .teamImages .imgBox2:hover .overlay {
+          #team .team-left .content .team__images .img-box2 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          #team .team-left .content .team__images .img-box2:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            #team .leftSide .content .teamImages .imgBox2:hover .overlay .overlayText {
+            #team .team-left .content .team__images .img-box2:hover .overlay .overlay__text {
               display: block; }
-            #team .leftSide .content .teamImages .imgBox2:hover .overlay .overlayButton {
-              margin: auto;
-              font-size: 25px;
-              font-weight: bold;
-              background-color: red;
-              color: white;
-              padding: 10 15%;
-              border: 1px solid darkred;
-              box-shadow: 2px 2px 2px black;
-              border-radius: 5px;
-              outline: none; }
-        #team .leftSide .content .teamImages .imgBox3 {
+            #team .team-left .content .team__images .img-box2:hover .overlay .overlay__btn {
+              display: block; }
+        #team .team-left .content .team__images .img-box3 {
           margin: 15px;
           height: auto;
           position: relative; }
-          #team .leftSide .content .teamImages .imgBox3 img {
+          #team .team-left .content .team__images .img-box3 img {
             object-fit: cover;
             width: 150px;
             height: 150px;
             border-radius: 10px; }
-          #team .leftSide .content .teamImages .imgBox3 .overlay {
+          #team .team-left .content .team__images .img-box3 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -267,7 +316,7 @@
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          #team .leftSide .content .teamImages .imgBox3 .overlayText {
+          #team .team-left .content .team__images .img-box3 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -277,46 +326,49 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            #team .leftSide .content .teamImages .imgBox3 .overlayText p {
+            #team .team-left .content .team__images .img-box3 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              #team .leftSide .content .teamImages .imgBox3 .overlayText p span {
+              #team .team-left .content .team__images .img-box3 .overlay__text p span {
                 font-size: 10px; }
-                #team .leftSide .content .teamImages .imgBox3 .overlayText p span i {
+                #team .team-left .content .team__images .img-box3 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            #team .leftSide .content .teamImages .imgBox3 .overlayText h1 {
+            #team .team-left .content .team__images .img-box3 .overlay__text h1 {
               font-weight: bold; }
-          #team .leftSide .content .teamImages .imgBox3:hover .overlay {
+          #team .team-left .content .team__images .img-box3 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          #team .team-left .content .team__images .img-box3:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            #team .leftSide .content .teamImages .imgBox3:hover .overlay .overlayText {
+            #team .team-left .content .team__images .img-box3:hover .overlay .overlay__text {
               display: block; }
-            #team .leftSide .content .teamImages .imgBox3:hover .overlay .overlayButton {
-              margin: auto;
-              font-size: 25px;
-              font-weight: bold;
-              background-color: red;
-              color: white;
-              padding: 10 15%;
-              border: 1px solid darkred;
-              box-shadow: 2px 2px 2px black;
-              border-radius: 5px;
-              outline: none; }
-  #team .rightSide {
+            #team .team-left .content .team__images .img-box3:hover .overlay .overlay__btn {
+              display: block; }
+  #team .team-right {
     width: 50%; }
     @media screen and (max-width: 1200px) {
-      #team .rightSide {
+      #team .team-right {
         width: 100%; } }
-    #team .rightSide .imgBox4 {
+    #team .team-right .img-box4 {
       width: 100%;
       height: auto;
       position: relative; }
-      #team .rightSide .imgBox4 img {
+      #team .team-right .img-box4 img {
         object-fit: cover;
         width: 100%; }
-      #team .rightSide .imgBox4 .overlay {
+      #team .team-right .img-box4 .overlay {
         position: absolute;
         display: block;
         margin: auto;
@@ -329,7 +381,7 @@
         opacity: 0;
         transition: .5s ease;
         background-color: red; }
-      #team .rightSide .imgBox4 .overlayText {
+      #team .team-right .img-box4 .overlay__text {
         display: none;
         margin: auto;
         background-color: transparent;
@@ -339,32 +391,35 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center; }
-        #team .rightSide .imgBox4 .overlayText p {
+        #team .team-right .img-box4 .overlay__text p {
           display: block;
           margin: 10px;
           font-size: auto; }
-          #team .rightSide .imgBox4 .overlayText p span {
+          #team .team-right .img-box4 .overlay__text p span {
             font-size: 10px; }
-            #team .rightSide .imgBox4 .overlayText p span i {
+            #team .team-right .img-box4 .overlay__text p span i {
               margin: 10px;
               color: white; }
-        #team .rightSide .imgBox4 .overlayText h1 {
+        #team .team-right .img-box4 .overlay__text h1 {
           font-weight: bold; }
-      #team .rightSide .imgBox4:hover .overlay {
+      #team .team-right .img-box4 .overlay__btn {
+        display: hidden;
+        margin: auto;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: red;
+        color: white;
+        padding: 3% 5%;
+        border: 1px solid darkred;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 5px;
+        outline: none; }
+      #team .team-right .img-box4:hover .overlay {
         opacity: .9;
         transition: opacity .5s; }
-        #team .rightSide .imgBox4:hover .overlay .overlayText {
+        #team .team-right .img-box4:hover .overlay .overlay__text {
           display: block; }
-        #team .rightSide .imgBox4:hover .overlay .overlayButton {
-          margin: auto;
-          font-size: 25px;
-          font-weight: bold;
-          background-color: red;
-          color: white;
-          padding: 10 15%;
-          border: 1px solid darkred;
-          box-shadow: 2px 2px 2px black;
-          border-radius: 5px;
-          outline: none; }
+        #team .team-right .img-box4:hover .overlay .overlay__btn {
+          display: block; }
 
 /*# sourceMappingURL=about.css.map */

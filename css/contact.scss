@@ -10,8 +10,7 @@
     	 align-items: center;
     	 margin:auto;
     }
-
-	.leftSide{
+	.contact-left{
 		width:50%;
 		display:flex;
 		flex-direction:column;
@@ -22,8 +21,7 @@
 			width:100%;
 			text-align:center;
 		}
-		
-		.formTitle{
+		.contact-left__title{
 			width:100%;
 
 			p{
@@ -44,7 +42,7 @@
 		}
 	}
 
-	.rightSide{
+	.contact-right{
 		width:50%;
 		display:flex;
 		flex-direction:column;
@@ -55,9 +53,8 @@
 			width:100%;
 			text-align: center;
 		}
-
 		.info{
-			.infoChild{
+			.info-item{
 				margin:30px;
 				p:nth-child(2){
 					font-weight: bold;

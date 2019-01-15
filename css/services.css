@@ -5,31 +5,31 @@
   padding: 5%; }
   #services .intro h1 {
     font-weight: bold; }
-#services #servicesBody {
+#services #services__body {
   display: flex;
   flex-direction: row;
   width: 100%; }
   @media screen and (max-width: 1400px) {
-    #services #servicesBody {
+    #services #services__body {
       flex-direction: column;
       width: 100%; } }
-  #services #servicesBody .leftSide {
+  #services #services__body .services__body-left {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 5%; }
     @media screen and (max-width: 1400px) {
-      #services #servicesBody .leftSide {
+      #services #services__body .services__body-left {
         flex-direction: column;
         width: 100%; } }
-    #services #servicesBody .leftSide .title p {
+    #services #services__body .services__body-left .services__title p {
       font-size: 20px;
       font-weight: bold; }
-      #services #servicesBody .leftSide .title p:nth-child(1) {
+      #services #services__body .services__body-left .services__title p:nth-child(1) {
         font-size: 15px;
         margin-left: 20px; }
-        #services #servicesBody .leftSide .title p:nth-child(1):before {
+        #services #services__body .services__body-left .services__title p:nth-child(1):before {
           content: "\2022";
           color: darkred;
           font-size: 20px;
@@ -37,19 +37,19 @@
           display: inline-block;
           width: 10px;
           margin-left: -1em; }
-    #services #servicesBody .leftSide .title h1 {
+    #services #services__body .services__body-left .services__title h1 {
       font-size: 21px; }
-    #services #servicesBody .leftSide .servicesIcons {
+    #services #services__body .services__body-left .services__icons {
       display: flex;
       width: 100%; }
       @media screen and (max-width: 990px) {
-        #services #servicesBody .leftSide .servicesIcons {
+        #services #services__body .services__body-left .services__icons {
           flex-direction: column;
           width: 100%;
           margin: auto; } }
-      #services #servicesBody .leftSide .servicesIcons .servicesIcon {
+      #services #services__body .services__body-left .services__icons .services__icons-item {
         display: block; }
-        #services #servicesBody .leftSide .servicesIcons .servicesIcon .icon {
+        #services #services__body .services__body-left .services__icons .services__icons-item .services__icon {
           background-color: red;
           color: white;
           width: 30px;
@@ -59,25 +59,26 @@
           padding: 4% 8%;
           border-radius: 10px;
           font-size: 30px; }
-        #services #servicesBody .leftSide .servicesIcons .servicesIcon .text {
-          margin-top: 20px; }
-          #services #servicesBody .leftSide .servicesIcons .servicesIcon .text h5 {
+        #services #services__body .services__body-left .services__icons .services__icons-item .text {
+          margin-top: 20px;
+          padding: 10px; }
+          #services #services__body .services__body-left .services__icons .services__icons-item .text h5 {
             font-weight: bold; }
-  #services #servicesBody .rightSide {
+  #services #services__body .services__body-right {
     width: 50%; }
     @media screen and (max-width: 1400px) {
-      #services #servicesBody .rightSide {
+      #services #services__body .services__body-right {
         flex-direction: column;
         width: 100%; } }
-    #services #servicesBody .rightSide .imgBox1 {
+    #services #services__body .services__body-right .img-box1 {
       width: 100%;
       height: auto;
       position: relative; }
-      #services #servicesBody .rightSide .imgBox1 img {
+      #services #services__body .services__body-right .img-box1 img {
         width: 100%;
         height: 800px;
         object-fit: cover; }
-      #services #servicesBody .rightSide .imgBox1 .overlay {
+      #services #services__body .services__body-right .img-box1 .overlay {
         position: absolute;
         display: block;
         margin: auto;
@@ -90,7 +91,7 @@
         opacity: 0;
         transition: .5s ease;
         background-color: red; }
-      #services #servicesBody .rightSide .imgBox1 .overlayText {
+      #services #services__body .services__body-right .img-box1 .overlay__text {
         display: none;
         margin: auto;
         background-color: transparent;
@@ -100,33 +101,36 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center; }
-        #services #servicesBody .rightSide .imgBox1 .overlayText p {
+        #services #services__body .services__body-right .img-box1 .overlay__text p {
           display: block;
           margin: 10px;
           font-size: auto; }
-          #services #servicesBody .rightSide .imgBox1 .overlayText p span {
+          #services #services__body .services__body-right .img-box1 .overlay__text p span {
             font-size: 10px; }
-            #services #servicesBody .rightSide .imgBox1 .overlayText p span i {
+            #services #services__body .services__body-right .img-box1 .overlay__text p span i {
               margin: 10px;
               color: white; }
-        #services #servicesBody .rightSide .imgBox1 .overlayText h1 {
+        #services #services__body .services__body-right .img-box1 .overlay__text h1 {
           font-weight: bold; }
-      #services #servicesBody .rightSide .imgBox1:hover .overlay {
+      #services #services__body .services__body-right .img-box1 .overlay__btn {
+        display: hidden;
+        margin: auto;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: red;
+        color: white;
+        padding: 3% 5%;
+        border: 1px solid darkred;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 5px;
+        outline: none; }
+      #services #services__body .services__body-right .img-box1:hover .overlay {
         opacity: .9;
         transition: opacity .5s; }
-        #services #servicesBody .rightSide .imgBox1:hover .overlay .overlayText {
+        #services #services__body .services__body-right .img-box1:hover .overlay .overlay__text {
           display: block; }
-        #services #servicesBody .rightSide .imgBox1:hover .overlay .overlayButton {
-          margin: auto;
-          font-size: 25px;
-          font-weight: bold;
-          background-color: red;
-          color: white;
-          padding: 10 15%;
-          border: 1px solid darkred;
-          box-shadow: 2px 2px 2px black;
-          border-radius: 5px;
-          outline: none; }
+        #services #services__body .services__body-right .img-box1:hover .overlay .overlay__btn {
+          display: block; }
 
 #clients {
   background-color: #EFEFEF;
@@ -135,26 +139,26 @@
   flex-direction: column;
   justify-content: center;
   text-align: center; }
-  #clients .imgBox2 {
+  #clients .img-box2 {
     width: 100%;
     height: auto;
     margin: auto;
     padding-top: 10%; }
-    #clients .imgBox2 img {
+    #clients .img-box2 img {
       width: 20%;
       height: auto;
       border-radius: 50%; }
-  #clients .text {
+  #clients .clients__text {
     width: 60%;
     margin: auto;
     padding: 5% 5%; }
-    #clients .text .quote i {
+    #clients .clients__text .clients__text__quote i {
       color: darkred;
       width: 50%;
       display: flex;
       justify-content: flex-start;
       padding-bottom: 1%; }
-    #clients .text .name {
+    #clients .clients__text .clients__text__name {
       font-weight: bold; }
 
 #partners {
@@ -165,14 +169,14 @@
     #partners {
       flex-direction: column;
       align-items: center; } }
-  #partners .icon {
+  #partners .partners-item {
     display: flex;
     flex-wrap: wrap;
     width: 10%;
     margin: auto;
     font-weight: bold; }
     @media (max-width: 736px) {
-      #partners .icon {
+      #partners .partners-item {
         display: block;
         width: 100%;
         margin: 5% 0%;

@@ -20,7 +20,7 @@ body {
         padding: 15px 15px;
         border-radius: 50%;
         font-size: 33px; }
-      body header #logo .logoText {
+      body header #logo .logo__text {
         text-align: center; }
     body header .nav {
       margin-top: 3%; }
@@ -30,18 +30,18 @@ body {
         font-weight: bold; }
         body header .nav .nav-link:hover {
           color: darkred; }
-    body header .headerBtn {
+    body header .header__btn {
       display: flex;
       justify-content: center;
       margin: 3%; }
-      body header .headerBtn button {
+      body header .header__btn .btn--grey {
         border: 1px solid grey;
         background-color: transparent;
         margin: 10px;
         padding: 2px 10px;
         border-radius: 4px;
         outline: none; }
-        body header .headerBtn button i {
+        body header .header__btn .btn--grey i {
           color: grey; }
   body #portfolio {
     width: 100%;
@@ -49,30 +49,30 @@ body {
     text-align: center;
     margin-bottom: 5%;
     display: block; }
-    body #portfolio .firstBox {
+    body #portfolio .portfolio__box-first {
       display: flex;
       flex-direction: row;
       width: 100%; }
       @media (max-width: 990px) {
-        body #portfolio .firstBox {
+        body #portfolio .portfolio__box-first {
           display: block; } }
-      body #portfolio .firstBox .leftSide {
+      body #portfolio .portfolio__box-first .box-left {
         width: 50%; }
         @media (max-width: 990px) {
-          body #portfolio .firstBox .leftSide {
+          body #portfolio .portfolio__box-first .box-left {
             display: block;
             width: 100%; } }
-        body #portfolio .firstBox .leftSide .top {
+        body #portfolio .portfolio__box-first .box-left .box-left-top {
           display: flex; }
-          body #portfolio .firstBox .leftSide .top .imgBox1 {
+          body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .firstBox .leftSide .top .imgBox1 img {
+            body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .firstBox .leftSide .top .imgBox1 .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -85,7 +85,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText {
+            body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -95,47 +95,50 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText p {
+              body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText p span {
+                body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText p span i {
+                  body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText h1 {
+              body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .firstBox .leftSide .top .imgBox1:hover .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .firstBox .leftSide .top .imgBox1:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .firstBox .leftSide .top .imgBox1:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-        body #portfolio .firstBox .leftSide .bottom {
+              body #portfolio .portfolio__box-first .box-left .box-left-top .img-box1:hover .overlay .overlay__btn {
+                display: block; }
+        body #portfolio .portfolio__box-first .box-left .box-left-bottom {
           display: flex; }
           @media (max-width: 736px) {
-            body #portfolio .firstBox .leftSide .bottom {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom {
               display: block; } }
-          body #portfolio .firstBox .leftSide .bottom .imgBox2 {
+          body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox2 img {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -148,7 +151,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -158,42 +161,45 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText p {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText p span {
+                body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText p span i {
+                  body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText h1 {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox2:hover .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox2:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox2:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-          body #portfolio .firstBox .leftSide .bottom .imgBox3 {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box2:hover .overlay .overlay__btn {
+                display: block; }
+          body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox3 img {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -206,7 +212,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -216,54 +222,57 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText p {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText p span {
+                body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText p span i {
+                  body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText h1 {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .firstBox .leftSide .bottom .imgBox3:hover .overlay {
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox3:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .firstBox .leftSide .bottom .imgBox3:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-      body #portfolio .firstBox .rightSide {
+              body #portfolio .portfolio__box-first .box-left .box-left-bottom .img-box3:hover .overlay .overlay__btn {
+                display: block; }
+      body #portfolio .portfolio__box-first .box-right {
         display: block;
         width: 50%; }
         @media (max-width: 990px) {
-          body #portfolio .firstBox .rightSide {
+          body #portfolio .portfolio__box-first .box-right {
             width: 100%; } }
-        body #portfolio .firstBox .rightSide .top {
+        body #portfolio .portfolio__box-first .box-right .box-right-top {
           display: flex;
           flex-direction: row; }
           @media (max-width: 736px) {
-            body #portfolio .firstBox .rightSide .top {
+            body #portfolio .portfolio__box-first .box-right .box-right-top {
               display: block; } }
-          body #portfolio .firstBox .rightSide .top .imgBox4 {
+          body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .firstBox .rightSide .top .imgBox4 img {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .firstBox .rightSide .top .imgBox4 .overlay {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -276,7 +285,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -286,42 +295,45 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText p {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText p span {
+                body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText p span i {
+                  body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText h1 {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .firstBox .rightSide .top .imgBox4:hover .overlay {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .firstBox .rightSide .top .imgBox4:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .firstBox .rightSide .top .imgBox4:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-          body #portfolio .firstBox .rightSide .top .imgBox5 {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box4:hover .overlay .overlay__btn {
+                display: block; }
+          body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .firstBox .rightSide .top .imgBox5 img {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .firstBox .rightSide .top .imgBox5 .overlay {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -334,7 +346,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -344,42 +356,45 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText p {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText p span {
+                body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText p span i {
+                  body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText h1 {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .firstBox .rightSide .top .imgBox5:hover .overlay {
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .firstBox .rightSide .top .imgBox5:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .firstBox .rightSide .top .imgBox5:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-        body #portfolio .firstBox .rightSide .bottom .imgBox6 {
+              body #portfolio .portfolio__box-first .box-right .box-right-top .img-box5:hover .overlay .overlay__btn {
+                display: block; }
+        body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 {
           width: 100%;
           height: auto;
           position: relative; }
-          body #portfolio .firstBox .rightSide .bottom .imgBox6 img {
+          body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 img {
             width: 100%;
             height: 400px;
             object-fit: cover; }
-          body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlay {
+          body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -392,7 +407,7 @@ body {
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText {
+          body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -402,56 +417,59 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText p {
+            body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText p span {
+              body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__text p span {
                 font-size: 10px; }
-                body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText p span i {
+                body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText h1 {
+            body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__text h1 {
               font-weight: bold; }
-          body #portfolio .firstBox .rightSide .bottom .imgBox6:hover .overlay {
+          body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            body #portfolio .firstBox .rightSide .bottom .imgBox6:hover .overlay .overlayText {
+            body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6:hover .overlay .overlay__text {
               display: block; }
-            body #portfolio .firstBox .rightSide .bottom .imgBox6:hover .overlay .overlayButton {
-              margin: auto;
-              font-size: 25px;
-              font-weight: bold;
-              background-color: red;
-              color: white;
-              padding: 10 15%;
-              border: 1px solid darkred;
-              box-shadow: 2px 2px 2px black;
-              border-radius: 5px;
-              outline: none; }
-    body #portfolio .secondBox {
+            body #portfolio .portfolio__box-first .box-right .box-right-bottom .img-box6:hover .overlay .overlay__btn {
+              display: block; }
+    body #portfolio .portfolio__box-second {
       width: 100%;
       display: flex;
       padding-bottom: 5%; }
       @media (max-width: 990px) {
-        body #portfolio .secondBox {
+        body #portfolio .portfolio__box-second {
           display: block;
           width: 100%; } }
-      body #portfolio .secondBox .leftSide {
+      body #portfolio .portfolio__box-second .box-left {
         width: 50%;
         display: block; }
         @media (max-width: 990px) {
-          body #portfolio .secondBox .leftSide {
+          body #portfolio .portfolio__box-second .box-left {
             width: 100%; } }
-        body #portfolio .secondBox .leftSide .top .imgBox7 {
+        body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 {
           width: 100%;
           height: auto;
           position: relative; }
-          body #portfolio .secondBox .leftSide .top .imgBox7 img {
+          body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 img {
             width: 100%;
             height: 400px;
             object-fit: cover; }
-          body #portfolio .secondBox .leftSide .top .imgBox7 .overlay {
+          body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -464,7 +482,7 @@ body {
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText {
+          body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -474,47 +492,111 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText p {
+            body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText p span {
+              body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__text p span {
                 font-size: 10px; }
-                body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText p span i {
+                body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText h1 {
+            body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__text h1 {
               font-weight: bold; }
-          body #portfolio .secondBox .leftSide .top .imgBox7:hover .overlay {
+          body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            body #portfolio .secondBox .leftSide .top .imgBox7:hover .overlay .overlayText {
+            body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7:hover .overlay .overlay__text {
               display: block; }
-            body #portfolio .secondBox .leftSide .top .imgBox7:hover .overlay .overlayButton {
+            body #portfolio .portfolio__box-second .box-left .box-left-top .img-box7:hover .overlay .overlay__btn {
+              display: block; }
+        body #portfolio .portfolio__box-second .box-left .box-left-bottom {
+          display: flex; }
+          @media (max-width: 736px) {
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom {
+              display: block; } }
+          body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 {
+            width: 100%;
+            height: auto;
+            position: relative; }
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover; }
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay {
+              position: absolute;
+              display: block;
               margin: auto;
-              font-size: 25px;
+              left: 0px;
+              top: 0px;
+              bottom: 0px;
+              right: 0px;
+              width: 100%;
+              height: auto;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: red; }
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__text {
+              display: none;
+              margin: auto;
+              background-color: transparent;
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center; }
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__text p {
+                display: block;
+                margin: 10px;
+                font-size: auto; }
+                body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__text p span {
+                  font-size: 10px; }
+                  body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__text p span i {
+                    margin: 10px;
+                    color: white; }
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__text h1 {
+                font-weight: bold; }
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8 .overlay__btn {
+              display: hidden;
+              margin: auto;
+              font-size: 15px;
               font-weight: bold;
               background-color: red;
               color: white;
-              padding: 10 15%;
+              padding: 3% 5%;
               border: 1px solid darkred;
               box-shadow: 2px 2px 2px black;
               border-radius: 5px;
               outline: none; }
-        body #portfolio .secondBox .leftSide .bottom {
-          display: flex; }
-          @media (max-width: 736px) {
-            body #portfolio .secondBox .leftSide .bottom {
-              display: block; } }
-          body #portfolio .secondBox .leftSide .bottom .imgBox8 {
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8:hover .overlay {
+              opacity: .9;
+              transition: opacity .5s; }
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8:hover .overlay .overlay__text {
+                display: block; }
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box8:hover .overlay .overlay__btn {
+                display: block; }
+          body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 {
             width: 100%;
             height: auto;
             position: relative; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox8 img {
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 img {
               width: 100%;
               height: 400px;
               object-fit: cover; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlay {
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay {
               position: absolute;
               display: block;
               margin: auto;
@@ -527,7 +609,7 @@ body {
               opacity: 0;
               transition: .5s ease;
               background-color: red; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText {
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__text {
               display: none;
               margin: auto;
               background-color: transparent;
@@ -537,106 +619,51 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText p {
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__text p {
                 display: block;
                 margin: 10px;
                 font-size: auto; }
-                body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText p span {
+                body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__text p span {
                   font-size: 10px; }
-                  body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText p span i {
+                  body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__text p span i {
                     margin: 10px;
                     color: white; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText h1 {
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__text h1 {
                 font-weight: bold; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox8:hover .overlay {
-              opacity: .9;
-              transition: opacity .5s; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox8:hover .overlay .overlayText {
-                display: block; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox8:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-          body #portfolio .secondBox .leftSide .bottom .imgBox9 {
-            width: 100%;
-            height: auto;
-            position: relative; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox9 img {
-              width: 100%;
-              height: 400px;
-              object-fit: cover; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlay {
-              position: absolute;
-              display: block;
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9 .overlay__btn {
+              display: hidden;
               margin: auto;
-              left: 0px;
-              top: 0px;
-              bottom: 0px;
-              right: 0px;
-              width: 100%;
-              height: auto;
-              opacity: 0;
-              transition: .5s ease;
-              background-color: red; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText {
-              display: none;
-              margin: auto;
-              background-color: transparent;
+              font-size: 15px;
+              font-weight: bold;
+              background-color: red;
               color: white;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              text-align: center; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText p {
-                display: block;
-                margin: 10px;
-                font-size: auto; }
-                body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText p span {
-                  font-size: 10px; }
-                  body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText p span i {
-                    margin: 10px;
-                    color: white; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText h1 {
-                font-weight: bold; }
-            body #portfolio .secondBox .leftSide .bottom .imgBox9:hover .overlay {
+              padding: 3% 5%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+            body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9:hover .overlay {
               opacity: .9;
               transition: opacity .5s; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox9:hover .overlay .overlayText {
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9:hover .overlay .overlay__text {
                 display: block; }
-              body #portfolio .secondBox .leftSide .bottom .imgBox9:hover .overlay .overlayButton {
-                margin: auto;
-                font-size: 25px;
-                font-weight: bold;
-                background-color: red;
-                color: white;
-                padding: 10 15%;
-                border: 1px solid darkred;
-                box-shadow: 2px 2px 2px black;
-                border-radius: 5px;
-                outline: none; }
-      body #portfolio .secondBox .rightSide {
+              body #portfolio .portfolio__box-second .box-left .box-left-bottom .img-box9:hover .overlay .overlay__btn {
+                display: block; }
+      body #portfolio .portfolio__box-second .box-right {
         width: 50%; }
         @media (max-width: 990px) {
-          body #portfolio .secondBox .rightSide {
+          body #portfolio .portfolio__box-second .box-right {
             display: block;
             width: 100%; } }
-        body #portfolio .secondBox .rightSide .imgBox10 {
+        body #portfolio .portfolio__box-second .box-right .img-box10 {
           width: 100%;
           height: auto;
           position: relative; }
-          body #portfolio .secondBox .rightSide .imgBox10 img {
+          body #portfolio .portfolio__box-second .box-right .img-box10 img {
             width: 100%;
             height: 800px;
             object-fit: cover; }
-          body #portfolio .secondBox .rightSide .imgBox10 .overlay {
+          body #portfolio .portfolio__box-second .box-right .img-box10 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -649,7 +676,7 @@ body {
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          body #portfolio .secondBox .rightSide .imgBox10 .overlayText {
+          body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -659,62 +686,66 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            body #portfolio .secondBox .rightSide .imgBox10 .overlayText p {
+            body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              body #portfolio .secondBox .rightSide .imgBox10 .overlayText p span {
+              body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__text p span {
                 font-size: 10px; }
-                body #portfolio .secondBox .rightSide .imgBox10 .overlayText p span i {
+                body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            body #portfolio .secondBox .rightSide .imgBox10 .overlayText h1 {
+            body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__text h1 {
               font-weight: bold; }
-          body #portfolio .secondBox .rightSide .imgBox10:hover .overlay {
+          body #portfolio .portfolio__box-second .box-right .img-box10 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          body #portfolio .portfolio__box-second .box-right .img-box10:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            body #portfolio .secondBox .rightSide .imgBox10:hover .overlay .overlayText {
+            body #portfolio .portfolio__box-second .box-right .img-box10:hover .overlay .overlay__text {
               display: block; }
-            body #portfolio .secondBox .rightSide .imgBox10:hover .overlay .overlayButton {
-              margin: auto;
-              font-size: 25px;
-              font-weight: bold;
-              background-color: red;
-              color: white;
-              padding: 10 15%;
-              border: 1px solid darkred;
-              box-shadow: 2px 2px 2px black;
-              border-radius: 5px;
-              outline: none; }
+            body #portfolio .portfolio__box-second .box-right .img-box10:hover .overlay .overlay__btn {
+              display: block; }
   body #about {
     background-color: #EFEFEF;
     width: 100%;
-    padding-bottom: 5%; }
-    body #about .aboutTitle {
+    padding-bottom: 5%;
+    padding-top: 5%; }
+    body #about .about__title {
       text-align: center;
       margin: auto; }
-    body #about .aboutText {
+    body #about .about__text {
       width: 100%;
       text-align: center;
       margin: auto;
       padding: 1% 25%; }
-    body #about #aboutBtn {
+    body #about #about__btn {
       display: flex;
       justify-content: center;
       text-align: center;
       margin: auto;
       padding-bottom: 5%; }
       @media (max-width: 410px) {
-        body #about #aboutBtn {
+        body #about #about__btn {
           flex-direction: column;
           width: 50%; } }
-      body #about #aboutBtn .aboutMore {
+      body #about #about__btn .about__btn--grey {
         margin: 10px;
         padding: 0px 15px;
         border: 1px solid grey;
         box-shadow: 2px 2px 2px;
         border-radius: 4px; }
-      body #about #aboutBtn .aboutServices {
+      body #about #about__btn .about__btn--red {
         margin: 10px;
         background-color: darkred;
         color: white;
@@ -731,18 +762,18 @@ body {
         body #about #links {
           flex-direction: column;
           align-items: center; } }
-      body #about #links .aboutLinks {
+      body #about #links .links__element {
         width: 15%;
         display: flex;
         margin: auto; }
         @media (max-width: 990px) {
-          body #about #links .aboutLinks {
+          body #about #links .links__element {
             padding-bottom: 10%; } }
         @media (max-width: 410px) {
-          body #about #links .aboutLinks {
+          body #about #links .links__element {
             display: block;
             margin: auto; } }
-        body #about #links .aboutLinks .aboutLink {
+        body #about #links .links__element .links__element__btn {
           padding: 25px 25px;
           display: flex;
           justify-content: center;
@@ -752,18 +783,18 @@ body {
           border-radius: 50%;
           margin: auto; }
           @media (max-width: 410px) {
-            body #about #links .aboutLinks .aboutLink {
+            body #about #links .links__element .links__element__btn {
               padding: 15px 25px; } }
-        body #about #links .aboutLinks p {
+        body #about #links .links__element p {
           color: grey;
           margin-left: 5px; }
-          body #about #links .aboutLinks p i {
+          body #about #links .links__element p i {
             margin: auto; }
-          body #about #links .aboutLinks p span {
+          body #about #links .links__element p span {
             font-weight: bold;
             color: black;
             font-size: 22px; }
-  body #footerTop {
+  body #footer-top {
     width: 100%;
     background-color: darkred;
     padding: 5%;
@@ -771,19 +802,19 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto; }
-    body #footerTop h2 {
+    body #footer-top h2 {
       font-size: 40px;
       margin: auto;
       text-align: center;
       padding-bottom: 30px;
       color: white; }
-    body #footerTop p {
+    body #footer-top p {
       width: 50%;
       color: grey;
       text-align: center;
       margin: auto;
       padding: 2% 0; }
-    body #footerTop button {
+    body #footer-top button {
       margin-top: 2%;
       font-size: 10px;
       font-weight: bold;
@@ -795,16 +826,16 @@ body {
       border-radius: 5px;
       outline: none;
       margin: auto; }
-    body #footerTop .form {
+    body #footer-top .form {
       width: 100%; }
-      body #footerTop .form .navbar {
+      body #footer-top .form .navbar {
         width: 100%;
         background-color: darkred !important;
         display: flex;
         justify-content: center; }
-        body #footerTop .form .navbar input::placeholder {
+        body #footer-top .form .navbar input::placeholder {
           font-size: 20px; }
-        body #footerTop .form .navbar button {
+        body #footer-top .form .navbar button {
           margin: auto;
           padding: 6px 20px;
           font-size: 15px;
@@ -814,9 +845,9 @@ body {
   body footer {
     padding: 3%;
     text-align: center; }
-    body footer .socialMediaLinks {
+    body footer .social__icons {
       padding: 20px; }
-      body footer .socialMediaLinks a {
+      body footer .social__icons a {
         color: grey;
         margin: 10px; }
     body footer .copyright {
@@ -829,31 +860,31 @@ body {
   padding: 5%; }
   #services .intro h1 {
     font-weight: bold; }
-#services #servicesBody {
+#services #services__body {
   display: flex;
   flex-direction: row;
   width: 100%; }
   @media screen and (max-width: 1400px) {
-    #services #servicesBody {
+    #services #services__body {
       flex-direction: column;
       width: 100%; } }
-  #services #servicesBody .leftSide {
+  #services #services__body .services__body-left {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 5%; }
     @media screen and (max-width: 1400px) {
-      #services #servicesBody .leftSide {
+      #services #services__body .services__body-left {
         flex-direction: column;
         width: 100%; } }
-    #services #servicesBody .leftSide .title p {
+    #services #services__body .services__body-left .services__title p {
       font-size: 20px;
       font-weight: bold; }
-      #services #servicesBody .leftSide .title p:nth-child(1) {
+      #services #services__body .services__body-left .services__title p:nth-child(1) {
         font-size: 15px;
         margin-left: 20px; }
-        #services #servicesBody .leftSide .title p:nth-child(1):before {
+        #services #services__body .services__body-left .services__title p:nth-child(1):before {
           content: "\2022";
           color: darkred;
           font-size: 20px;
@@ -861,19 +892,19 @@ body {
           display: inline-block;
           width: 10px;
           margin-left: -1em; }
-    #services #servicesBody .leftSide .title h1 {
+    #services #services__body .services__body-left .services__title h1 {
       font-size: 21px; }
-    #services #servicesBody .leftSide .servicesIcons {
+    #services #services__body .services__body-left .services__icons {
       display: flex;
       width: 100%; }
       @media screen and (max-width: 990px) {
-        #services #servicesBody .leftSide .servicesIcons {
+        #services #services__body .services__body-left .services__icons {
           flex-direction: column;
           width: 100%;
           margin: auto; } }
-      #services #servicesBody .leftSide .servicesIcons .servicesIcon {
+      #services #services__body .services__body-left .services__icons .services__icons-item {
         display: block; }
-        #services #servicesBody .leftSide .servicesIcons .servicesIcon .icon {
+        #services #services__body .services__body-left .services__icons .services__icons-item .services__icon {
           background-color: red;
           color: white;
           width: 30px;
@@ -883,25 +914,26 @@ body {
           padding: 4% 8%;
           border-radius: 10px;
           font-size: 30px; }
-        #services #servicesBody .leftSide .servicesIcons .servicesIcon .text {
-          margin-top: 20px; }
-          #services #servicesBody .leftSide .servicesIcons .servicesIcon .text h5 {
+        #services #services__body .services__body-left .services__icons .services__icons-item .text {
+          margin-top: 20px;
+          padding: 10px; }
+          #services #services__body .services__body-left .services__icons .services__icons-item .text h5 {
             font-weight: bold; }
-  #services #servicesBody .rightSide {
+  #services #services__body .services__body-right {
     width: 50%; }
     @media screen and (max-width: 1400px) {
-      #services #servicesBody .rightSide {
+      #services #services__body .services__body-right {
         flex-direction: column;
         width: 100%; } }
-    #services #servicesBody .rightSide .imgBox1 {
+    #services #services__body .services__body-right .img-box1 {
       width: 100%;
       height: auto;
       position: relative; }
-      #services #servicesBody .rightSide .imgBox1 img {
+      #services #services__body .services__body-right .img-box1 img {
         width: 100%;
         height: 800px;
         object-fit: cover; }
-      #services #servicesBody .rightSide .imgBox1 .overlay {
+      #services #services__body .services__body-right .img-box1 .overlay {
         position: absolute;
         display: block;
         margin: auto;
@@ -914,7 +946,7 @@ body {
         opacity: 0;
         transition: .5s ease;
         background-color: red; }
-      #services #servicesBody .rightSide .imgBox1 .overlayText {
+      #services #services__body .services__body-right .img-box1 .overlay__text {
         display: none;
         margin: auto;
         background-color: transparent;
@@ -924,33 +956,36 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center; }
-        #services #servicesBody .rightSide .imgBox1 .overlayText p {
+        #services #services__body .services__body-right .img-box1 .overlay__text p {
           display: block;
           margin: 10px;
           font-size: auto; }
-          #services #servicesBody .rightSide .imgBox1 .overlayText p span {
+          #services #services__body .services__body-right .img-box1 .overlay__text p span {
             font-size: 10px; }
-            #services #servicesBody .rightSide .imgBox1 .overlayText p span i {
+            #services #services__body .services__body-right .img-box1 .overlay__text p span i {
               margin: 10px;
               color: white; }
-        #services #servicesBody .rightSide .imgBox1 .overlayText h1 {
+        #services #services__body .services__body-right .img-box1 .overlay__text h1 {
           font-weight: bold; }
-      #services #servicesBody .rightSide .imgBox1:hover .overlay {
+      #services #services__body .services__body-right .img-box1 .overlay__btn {
+        display: hidden;
+        margin: auto;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: red;
+        color: white;
+        padding: 3% 5%;
+        border: 1px solid darkred;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 5px;
+        outline: none; }
+      #services #services__body .services__body-right .img-box1:hover .overlay {
         opacity: .9;
         transition: opacity .5s; }
-        #services #servicesBody .rightSide .imgBox1:hover .overlay .overlayText {
+        #services #services__body .services__body-right .img-box1:hover .overlay .overlay__text {
           display: block; }
-        #services #servicesBody .rightSide .imgBox1:hover .overlay .overlayButton {
-          margin: auto;
-          font-size: 25px;
-          font-weight: bold;
-          background-color: red;
-          color: white;
-          padding: 10 15%;
-          border: 1px solid darkred;
-          box-shadow: 2px 2px 2px black;
-          border-radius: 5px;
-          outline: none; }
+        #services #services__body .services__body-right .img-box1:hover .overlay .overlay__btn {
+          display: block; }
 
 #clients {
   background-color: #EFEFEF;
@@ -959,26 +994,26 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center; }
-  #clients .imgBox2 {
+  #clients .img-box2 {
     width: 100%;
     height: auto;
     margin: auto;
     padding-top: 10%; }
-    #clients .imgBox2 img {
+    #clients .img-box2 img {
       width: 20%;
       height: auto;
       border-radius: 50%; }
-  #clients .text {
+  #clients .clients__text {
     width: 60%;
     margin: auto;
     padding: 5% 5%; }
-    #clients .text .quote i {
+    #clients .clients__text .clients__text__quote i {
       color: darkred;
       width: 50%;
       display: flex;
       justify-content: flex-start;
       padding-bottom: 1%; }
-    #clients .text .name {
+    #clients .clients__text .clients__text__name {
       font-weight: bold; }
 
 #partners {
@@ -989,14 +1024,14 @@ body {
     #partners {
       flex-direction: column;
       align-items: center; } }
-  #partners .icon {
+  #partners .partners-item {
     display: flex;
     flex-wrap: wrap;
     width: 10%;
     margin: auto;
     font-weight: bold; }
     @media (max-width: 736px) {
-      #partners .icon {
+      #partners .partners-item {
         display: block;
         width: 100%;
         margin: 5% 0%;
@@ -1011,35 +1046,35 @@ body {
   .intro h1 {
     font-weight: bold; }
 
-#aboutUs {
+#about__section {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: auto;
   padding-bottom: 5%; }
   @media screen and (max-width: 768px) {
-    #aboutUs {
+    #about__section {
       display: block;
       width: 100%;
       margin: auto; } }
-  #aboutUs .aboutUsLeft {
+  #about__section .about-left {
     width: 50%;
     padding: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
     @media screen and (max-width: 768px) {
-      #aboutUs .aboutUsLeft {
+      #about__section .about-left {
         display: block;
         width: 100%;
         margin: auto; } }
-    #aboutUs .aboutUsLeft .aboutUsText {
+    #about__section .about-left .about-left__Text {
       font-size: 21px;
       padding: 5% 0%; }
-      #aboutUs .aboutUsLeft .aboutUsText p {
+      #about__section .about-left .about-left__Text p {
         margin-left: 20px;
         font-size: 15px; }
-        #aboutUs .aboutUsLeft .aboutUsText p:before {
+        #about__section .about-left .about-left__Text p:before {
           content: "\2022";
           color: darkred;
           font-size: 20px;
@@ -1047,10 +1082,10 @@ body {
           display: inline-block;
           width: 10px;
           margin-left: -1em; }
-      #aboutUs .aboutUsLeft .aboutUsText span {
+      #about__section .about-left .about-left__Text span {
         font-weight: bold;
         color: black; }
-    #aboutUs .aboutUsLeft button {
+    #about__section .about-left button {
       width: 20%;
       font-size: 10px;
       font-weight: bold;
@@ -1061,24 +1096,67 @@ body {
       box-shadow: 2px 2px 2px black;
       border-radius: 5px; }
       @media screen and (max-width: 768px) {
-        #aboutUs .aboutUsLeft button {
+        #about__section .about-left button {
           display: block;
           width: 100%;
           margin: auto; } }
-  #aboutUs .skills {
+  #about__section .skills {
     width: 50%;
     padding: 5% 5%;
     margin: auto; }
-    #aboutUs .skills p {
+    #about__section .skills p {
       margin: 0;
       font-size: 15px; }
-    #aboutUs .skills .progress .progress-bar {
+    #about__section .skills .progress .progress-bar {
       padding: 0px;
       margin: 0px;
       background-color: red; }
 
-#about {
-  padding: 10% 0%; }
+#stats {
+  padding: 10% 0%;
+  background-color: #EFEFEF; }
+  #stats #links {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto; }
+    @media (max-width: 990px) {
+      #stats #links {
+        flex-direction: column;
+        align-items: center; } }
+    #stats #links .links__element {
+      width: 15%;
+      display: flex;
+      margin: auto; }
+      @media (max-width: 990px) {
+        #stats #links .links__element {
+          padding-bottom: 10%; } }
+      @media (max-width: 410px) {
+        #stats #links .links__element {
+          display: block;
+          margin: auto; } }
+      #stats #links .links__element .links__element__btn {
+        padding: 25px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darkred;
+        color: white;
+        border-radius: 50%;
+        margin: auto; }
+        @media (max-width: 410px) {
+          #stats #links .links__element .links__element__btn {
+            padding: 15px 25px; } }
+      #stats #links .links__element p {
+        color: grey;
+        margin-left: 5px; }
+        #stats #links .links__element p i {
+          margin: auto; }
+        #stats #links .links__element p span {
+          font-weight: bold;
+          color: black;
+          font-size: 22px; }
 
 #team {
   display: flex;
@@ -1087,25 +1165,25 @@ body {
   @media screen and (max-width: 1200px) {
     #team {
       flex-direction: column; } }
-  #team .leftSide {
+  #team .team-left {
     width: 50%;
     margin: auto; }
     @media screen and (max-width: 1200px) {
-      #team .leftSide {
+      #team .team-left {
         width: 100%;
         text-align: center;
         margin: auto; } }
-    #team .leftSide .content {
+    #team .team-left .content {
       display: flex;
       flex-direction: column;
       padding: 10% 0%; }
-      #team .leftSide .content p {
+      #team .team-left .content p {
         font-size: 20px;
-        margin-left: 120px; }
-        #team .leftSide .content p:nth-child(1) {
-          margin-left: 130px;
+        margin-left: 190px; }
+        #team .team-left .content p:nth-child(1) {
+          margin-left: 190px;
           font-size: 15px; }
-          #team .leftSide .content p:nth-child(1):before {
+          #team .team-left .content p:nth-child(1):before {
             content: "\2022";
             color: darkred;
             font-size: 20px;
@@ -1114,34 +1192,34 @@ body {
             width: 10px;
             margin-left: -1em; }
         @media screen and (max-width: 1200px) {
-          #team .leftSide .content p {
+          #team .team-left .content p {
             flex-direction: column;
             text-align: center;
             margin: auto;
             justify-content: center;
             word-wrap: break-word; }
-            #team .leftSide .content p:nth-child(1) {
+            #team .team-left .content p:nth-child(1) {
               margin: auto; } }
-      #team .leftSide .content span {
+      #team .team-left .content span {
         font-weight: bold; }
-      #team .leftSide .content .teamImages {
+      #team .team-left .content .team__images {
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin: auto; }
         @media screen and (max-width: 768px) {
-          #team .leftSide .content .teamImages {
+          #team .team-left .content .team__images {
             flex-direction: column; } }
-        #team .leftSide .content .teamImages .imgBox1 {
+        #team .team-left .content .team__images .img-box1 {
           margin: 15px;
           height: auto;
           position: relative; }
-          #team .leftSide .content .teamImages .imgBox1 img {
+          #team .team-left .content .team__images .img-box1 img {
             object-fit: cover;
             width: 150px;
             height: 150px;
             border-radius: 10px; }
-          #team .leftSide .content .teamImages .imgBox1 .overlay {
+          #team .team-left .content .team__images .img-box1 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -1154,7 +1232,7 @@ body {
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          #team .leftSide .content .teamImages .imgBox1 .overlayText {
+          #team .team-left .content .team__images .img-box1 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -1164,43 +1242,46 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            #team .leftSide .content .teamImages .imgBox1 .overlayText p {
+            #team .team-left .content .team__images .img-box1 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              #team .leftSide .content .teamImages .imgBox1 .overlayText p span {
+              #team .team-left .content .team__images .img-box1 .overlay__text p span {
                 font-size: 10px; }
-                #team .leftSide .content .teamImages .imgBox1 .overlayText p span i {
+                #team .team-left .content .team__images .img-box1 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            #team .leftSide .content .teamImages .imgBox1 .overlayText h1 {
+            #team .team-left .content .team__images .img-box1 .overlay__text h1 {
               font-weight: bold; }
-          #team .leftSide .content .teamImages .imgBox1:hover .overlay {
+          #team .team-left .content .team__images .img-box1 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          #team .team-left .content .team__images .img-box1:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            #team .leftSide .content .teamImages .imgBox1:hover .overlay .overlayText {
+            #team .team-left .content .team__images .img-box1:hover .overlay .overlay__text {
               display: block; }
-            #team .leftSide .content .teamImages .imgBox1:hover .overlay .overlayButton {
-              margin: auto;
-              font-size: 25px;
-              font-weight: bold;
-              background-color: red;
-              color: white;
-              padding: 10 15%;
-              border: 1px solid darkred;
-              box-shadow: 2px 2px 2px black;
-              border-radius: 5px;
-              outline: none; }
-        #team .leftSide .content .teamImages .imgBox2 {
+            #team .team-left .content .team__images .img-box1:hover .overlay .overlay__btn {
+              display: block; }
+        #team .team-left .content .team__images .img-box2 {
           margin: 15px;
           height: auto;
           position: relative; }
-          #team .leftSide .content .teamImages .imgBox2 img {
+          #team .team-left .content .team__images .img-box2 img {
             object-fit: cover;
             width: 150px;
             height: 150px;
             border-radius: 10px; }
-          #team .leftSide .content .teamImages .imgBox2 .overlay {
+          #team .team-left .content .team__images .img-box2 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -1213,7 +1294,7 @@ body {
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          #team .leftSide .content .teamImages .imgBox2 .overlayText {
+          #team .team-left .content .team__images .img-box2 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -1223,43 +1304,46 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            #team .leftSide .content .teamImages .imgBox2 .overlayText p {
+            #team .team-left .content .team__images .img-box2 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              #team .leftSide .content .teamImages .imgBox2 .overlayText p span {
+              #team .team-left .content .team__images .img-box2 .overlay__text p span {
                 font-size: 10px; }
-                #team .leftSide .content .teamImages .imgBox2 .overlayText p span i {
+                #team .team-left .content .team__images .img-box2 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            #team .leftSide .content .teamImages .imgBox2 .overlayText h1 {
+            #team .team-left .content .team__images .img-box2 .overlay__text h1 {
               font-weight: bold; }
-          #team .leftSide .content .teamImages .imgBox2:hover .overlay {
+          #team .team-left .content .team__images .img-box2 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          #team .team-left .content .team__images .img-box2:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            #team .leftSide .content .teamImages .imgBox2:hover .overlay .overlayText {
+            #team .team-left .content .team__images .img-box2:hover .overlay .overlay__text {
               display: block; }
-            #team .leftSide .content .teamImages .imgBox2:hover .overlay .overlayButton {
-              margin: auto;
-              font-size: 25px;
-              font-weight: bold;
-              background-color: red;
-              color: white;
-              padding: 10 15%;
-              border: 1px solid darkred;
-              box-shadow: 2px 2px 2px black;
-              border-radius: 5px;
-              outline: none; }
-        #team .leftSide .content .teamImages .imgBox3 {
+            #team .team-left .content .team__images .img-box2:hover .overlay .overlay__btn {
+              display: block; }
+        #team .team-left .content .team__images .img-box3 {
           margin: 15px;
           height: auto;
           position: relative; }
-          #team .leftSide .content .teamImages .imgBox3 img {
+          #team .team-left .content .team__images .img-box3 img {
             object-fit: cover;
             width: 150px;
             height: 150px;
             border-radius: 10px; }
-          #team .leftSide .content .teamImages .imgBox3 .overlay {
+          #team .team-left .content .team__images .img-box3 .overlay {
             position: absolute;
             display: block;
             margin: auto;
@@ -1272,7 +1356,7 @@ body {
             opacity: 0;
             transition: .5s ease;
             background-color: red; }
-          #team .leftSide .content .teamImages .imgBox3 .overlayText {
+          #team .team-left .content .team__images .img-box3 .overlay__text {
             display: none;
             margin: auto;
             background-color: transparent;
@@ -1282,46 +1366,49 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; }
-            #team .leftSide .content .teamImages .imgBox3 .overlayText p {
+            #team .team-left .content .team__images .img-box3 .overlay__text p {
               display: block;
               margin: 10px;
               font-size: auto; }
-              #team .leftSide .content .teamImages .imgBox3 .overlayText p span {
+              #team .team-left .content .team__images .img-box3 .overlay__text p span {
                 font-size: 10px; }
-                #team .leftSide .content .teamImages .imgBox3 .overlayText p span i {
+                #team .team-left .content .team__images .img-box3 .overlay__text p span i {
                   margin: 10px;
                   color: white; }
-            #team .leftSide .content .teamImages .imgBox3 .overlayText h1 {
+            #team .team-left .content .team__images .img-box3 .overlay__text h1 {
               font-weight: bold; }
-          #team .leftSide .content .teamImages .imgBox3:hover .overlay {
+          #team .team-left .content .team__images .img-box3 .overlay__btn {
+            display: hidden;
+            margin: auto;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 3% 5%;
+            border: 1px solid darkred;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            outline: none; }
+          #team .team-left .content .team__images .img-box3:hover .overlay {
             opacity: .9;
             transition: opacity .5s; }
-            #team .leftSide .content .teamImages .imgBox3:hover .overlay .overlayText {
+            #team .team-left .content .team__images .img-box3:hover .overlay .overlay__text {
               display: block; }
-            #team .leftSide .content .teamImages .imgBox3:hover .overlay .overlayButton {
-              margin: auto;
-              font-size: 25px;
-              font-weight: bold;
-              background-color: red;
-              color: white;
-              padding: 10 15%;
-              border: 1px solid darkred;
-              box-shadow: 2px 2px 2px black;
-              border-radius: 5px;
-              outline: none; }
-  #team .rightSide {
+            #team .team-left .content .team__images .img-box3:hover .overlay .overlay__btn {
+              display: block; }
+  #team .team-right {
     width: 50%; }
     @media screen and (max-width: 1200px) {
-      #team .rightSide {
+      #team .team-right {
         width: 100%; } }
-    #team .rightSide .imgBox4 {
+    #team .team-right .img-box4 {
       width: 100%;
       height: auto;
       position: relative; }
-      #team .rightSide .imgBox4 img {
+      #team .team-right .img-box4 img {
         object-fit: cover;
         width: 100%; }
-      #team .rightSide .imgBox4 .overlay {
+      #team .team-right .img-box4 .overlay {
         position: absolute;
         display: block;
         margin: auto;
@@ -1334,7 +1421,7 @@ body {
         opacity: 0;
         transition: .5s ease;
         background-color: red; }
-      #team .rightSide .imgBox4 .overlayText {
+      #team .team-right .img-box4 .overlay__text {
         display: none;
         margin: auto;
         background-color: transparent;
@@ -1344,33 +1431,36 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center; }
-        #team .rightSide .imgBox4 .overlayText p {
+        #team .team-right .img-box4 .overlay__text p {
           display: block;
           margin: 10px;
           font-size: auto; }
-          #team .rightSide .imgBox4 .overlayText p span {
+          #team .team-right .img-box4 .overlay__text p span {
             font-size: 10px; }
-            #team .rightSide .imgBox4 .overlayText p span i {
+            #team .team-right .img-box4 .overlay__text p span i {
               margin: 10px;
               color: white; }
-        #team .rightSide .imgBox4 .overlayText h1 {
+        #team .team-right .img-box4 .overlay__text h1 {
           font-weight: bold; }
-      #team .rightSide .imgBox4:hover .overlay {
+      #team .team-right .img-box4 .overlay__btn {
+        display: hidden;
+        margin: auto;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: red;
+        color: white;
+        padding: 3% 5%;
+        border: 1px solid darkred;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 5px;
+        outline: none; }
+      #team .team-right .img-box4:hover .overlay {
         opacity: .9;
         transition: opacity .5s; }
-        #team .rightSide .imgBox4:hover .overlay .overlayText {
+        #team .team-right .img-box4:hover .overlay .overlay__text {
           display: block; }
-        #team .rightSide .imgBox4:hover .overlay .overlayButton {
-          margin: auto;
-          font-size: 25px;
-          font-weight: bold;
-          background-color: red;
-          color: white;
-          padding: 10 15%;
-          border: 1px solid darkred;
-          box-shadow: 2px 2px 2px black;
-          border-radius: 5px;
-          outline: none; }
+        #team .team-right .img-box4:hover .overlay .overlay__btn {
+          display: block; }
 
 #contact {
   width: 100%;
@@ -1381,7 +1471,7 @@ body {
       flex-direction: column;
       align-items: center;
       margin: auto; } }
-  #contact .leftSide {
+  #contact .contact-left {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1389,17 +1479,17 @@ body {
     justify-content: center;
     padding: 8%; }
     @media (max-width: 736px) {
-      #contact .leftSide {
+      #contact .contact-left {
         width: 100%;
         text-align: center; } }
-    #contact .leftSide .formTitle {
+    #contact .contact-left .contact-left__title {
       width: 100%; }
-      #contact .leftSide .formTitle p {
+      #contact .contact-left .contact-left__title p {
         font-size: 20px; }
-        #contact .leftSide .formTitle p:nth-child(1) {
+        #contact .contact-left .contact-left__title p:nth-child(1) {
           margin-left: 20px;
           font-size: 15px; }
-          #contact .leftSide .formTitle p:nth-child(1):before {
+          #contact .contact-left .contact-left__title p:nth-child(1):before {
             content: "\2022";
             color: darkred;
             font-size: 20px;
@@ -1407,11 +1497,11 @@ body {
             display: inline-block;
             width: 10px;
             margin-left: -1em; }
-        #contact .leftSide .formTitle p span {
+        #contact .contact-left .contact-left__title p span {
           font-weight: bold; }
-    #contact .leftSide .form {
+    #contact .contact-left .form {
       width: 100%; }
-  #contact .rightSide {
+  #contact .contact-right {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1419,12 +1509,12 @@ body {
     padding: 10%;
     position: relative; }
     @media (max-width: 736px) {
-      #contact .rightSide {
+      #contact .contact-right {
         width: 100%;
         text-align: center; } }
-    #contact .rightSide .info .infoChild {
+    #contact .contact-right .info .info-item {
       margin: 30px; }
-      #contact .rightSide .info .infoChild p:nth-child(2) {
+      #contact .contact-right .info .info-item p:nth-child(2) {
         font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
