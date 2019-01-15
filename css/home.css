@@ -1,0 +1,825 @@
+body {
+  margin: 0px;
+  color: #363636;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box; }
+  body header {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    body header #logo {
+      text-align: center;
+      margin: auto;
+      margin-top: 15%; }
+      body header #logo .navbar-brand {
+        color: white;
+        background-color: darkred;
+        margin: auto;
+        padding: 15px 15px;
+        border-radius: 50%;
+        font-size: 33px; }
+      body header #logo .logoText {
+        text-align: center; }
+    body header .nav {
+      margin-top: 3%; }
+      body header .nav .nav-link {
+        color: black;
+        text-decoration: none;
+        font-weight: bold; }
+        body header .nav .nav-link:hover {
+          color: darkred; }
+    body header .headerBtn {
+      display: flex;
+      justify-content: center;
+      margin: 3%; }
+      body header .headerBtn button {
+        border: 1px solid grey;
+        background-color: transparent;
+        margin: 10px;
+        padding: 2px 10px;
+        border-radius: 4px;
+        outline: none; }
+        body header .headerBtn button i {
+          color: grey; }
+  body #portfolio {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 5%;
+    display: block; }
+    body #portfolio .firstBox {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      @media (max-width: 990px) {
+        body #portfolio .firstBox {
+          display: block; } }
+      body #portfolio .firstBox .leftSide {
+        width: 50%; }
+        @media (max-width: 990px) {
+          body #portfolio .firstBox .leftSide {
+            display: block;
+            width: 100%; } }
+        body #portfolio .firstBox .leftSide .top {
+          display: flex; }
+          body #portfolio .firstBox .leftSide .top .imgBox1 {
+            width: 100%;
+            height: auto;
+            position: relative; }
+            body #portfolio .firstBox .leftSide .top .imgBox1 img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover; }
+            body #portfolio .firstBox .leftSide .top .imgBox1 .overlay {
+              position: absolute;
+              display: block;
+              margin: auto;
+              left: 0px;
+              top: 0px;
+              bottom: 0px;
+              right: 0px;
+              width: 100%;
+              height: auto;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: red; }
+            body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText {
+              display: none;
+              margin: auto;
+              background-color: transparent;
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center; }
+              body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText p {
+                display: block;
+                margin: 10px;
+                font-size: auto; }
+                body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText p span {
+                  font-size: 10px; }
+                  body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText p span i {
+                    margin: 10px;
+                    color: white; }
+              body #portfolio .firstBox .leftSide .top .imgBox1 .overlayText h1 {
+                font-weight: bold; }
+            body #portfolio .firstBox .leftSide .top .imgBox1:hover .overlay {
+              opacity: .9;
+              transition: opacity .5s; }
+              body #portfolio .firstBox .leftSide .top .imgBox1:hover .overlay .overlayText {
+                display: block; }
+              body #portfolio .firstBox .leftSide .top .imgBox1:hover .overlay .overlayButton {
+                margin: auto;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: red;
+                color: white;
+                padding: 10 15%;
+                border: 1px solid darkred;
+                box-shadow: 2px 2px 2px black;
+                border-radius: 5px;
+                outline: none; }
+        body #portfolio .firstBox .leftSide .bottom {
+          display: flex; }
+          @media (max-width: 736px) {
+            body #portfolio .firstBox .leftSide .bottom {
+              display: block; } }
+          body #portfolio .firstBox .leftSide .bottom .imgBox2 {
+            width: 100%;
+            height: auto;
+            position: relative; }
+            body #portfolio .firstBox .leftSide .bottom .imgBox2 img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover; }
+            body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlay {
+              position: absolute;
+              display: block;
+              margin: auto;
+              left: 0px;
+              top: 0px;
+              bottom: 0px;
+              right: 0px;
+              width: 100%;
+              height: auto;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: red; }
+            body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText {
+              display: none;
+              margin: auto;
+              background-color: transparent;
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center; }
+              body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText p {
+                display: block;
+                margin: 10px;
+                font-size: auto; }
+                body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText p span {
+                  font-size: 10px; }
+                  body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText p span i {
+                    margin: 10px;
+                    color: white; }
+              body #portfolio .firstBox .leftSide .bottom .imgBox2 .overlayText h1 {
+                font-weight: bold; }
+            body #portfolio .firstBox .leftSide .bottom .imgBox2:hover .overlay {
+              opacity: .9;
+              transition: opacity .5s; }
+              body #portfolio .firstBox .leftSide .bottom .imgBox2:hover .overlay .overlayText {
+                display: block; }
+              body #portfolio .firstBox .leftSide .bottom .imgBox2:hover .overlay .overlayButton {
+                margin: auto;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: red;
+                color: white;
+                padding: 10 15%;
+                border: 1px solid darkred;
+                box-shadow: 2px 2px 2px black;
+                border-radius: 5px;
+                outline: none; }
+          body #portfolio .firstBox .leftSide .bottom .imgBox3 {
+            width: 100%;
+            height: auto;
+            position: relative; }
+            body #portfolio .firstBox .leftSide .bottom .imgBox3 img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover; }
+            body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlay {
+              position: absolute;
+              display: block;
+              margin: auto;
+              left: 0px;
+              top: 0px;
+              bottom: 0px;
+              right: 0px;
+              width: 100%;
+              height: auto;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: red; }
+            body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText {
+              display: none;
+              margin: auto;
+              background-color: transparent;
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center; }
+              body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText p {
+                display: block;
+                margin: 10px;
+                font-size: auto; }
+                body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText p span {
+                  font-size: 10px; }
+                  body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText p span i {
+                    margin: 10px;
+                    color: white; }
+              body #portfolio .firstBox .leftSide .bottom .imgBox3 .overlayText h1 {
+                font-weight: bold; }
+            body #portfolio .firstBox .leftSide .bottom .imgBox3:hover .overlay {
+              opacity: .9;
+              transition: opacity .5s; }
+              body #portfolio .firstBox .leftSide .bottom .imgBox3:hover .overlay .overlayText {
+                display: block; }
+              body #portfolio .firstBox .leftSide .bottom .imgBox3:hover .overlay .overlayButton {
+                margin: auto;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: red;
+                color: white;
+                padding: 10 15%;
+                border: 1px solid darkred;
+                box-shadow: 2px 2px 2px black;
+                border-radius: 5px;
+                outline: none; }
+      body #portfolio .firstBox .rightSide {
+        display: block;
+        width: 50%; }
+        @media (max-width: 990px) {
+          body #portfolio .firstBox .rightSide {
+            width: 100%; } }
+        body #portfolio .firstBox .rightSide .top {
+          display: flex;
+          flex-direction: row; }
+          @media (max-width: 736px) {
+            body #portfolio .firstBox .rightSide .top {
+              display: block; } }
+          body #portfolio .firstBox .rightSide .top .imgBox4 {
+            width: 100%;
+            height: auto;
+            position: relative; }
+            body #portfolio .firstBox .rightSide .top .imgBox4 img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover; }
+            body #portfolio .firstBox .rightSide .top .imgBox4 .overlay {
+              position: absolute;
+              display: block;
+              margin: auto;
+              left: 0px;
+              top: 0px;
+              bottom: 0px;
+              right: 0px;
+              width: 100%;
+              height: auto;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: red; }
+            body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText {
+              display: none;
+              margin: auto;
+              background-color: transparent;
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center; }
+              body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText p {
+                display: block;
+                margin: 10px;
+                font-size: auto; }
+                body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText p span {
+                  font-size: 10px; }
+                  body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText p span i {
+                    margin: 10px;
+                    color: white; }
+              body #portfolio .firstBox .rightSide .top .imgBox4 .overlayText h1 {
+                font-weight: bold; }
+            body #portfolio .firstBox .rightSide .top .imgBox4:hover .overlay {
+              opacity: .9;
+              transition: opacity .5s; }
+              body #portfolio .firstBox .rightSide .top .imgBox4:hover .overlay .overlayText {
+                display: block; }
+              body #portfolio .firstBox .rightSide .top .imgBox4:hover .overlay .overlayButton {
+                margin: auto;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: red;
+                color: white;
+                padding: 10 15%;
+                border: 1px solid darkred;
+                box-shadow: 2px 2px 2px black;
+                border-radius: 5px;
+                outline: none; }
+          body #portfolio .firstBox .rightSide .top .imgBox5 {
+            width: 100%;
+            height: auto;
+            position: relative; }
+            body #portfolio .firstBox .rightSide .top .imgBox5 img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover; }
+            body #portfolio .firstBox .rightSide .top .imgBox5 .overlay {
+              position: absolute;
+              display: block;
+              margin: auto;
+              left: 0px;
+              top: 0px;
+              bottom: 0px;
+              right: 0px;
+              width: 100%;
+              height: auto;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: red; }
+            body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText {
+              display: none;
+              margin: auto;
+              background-color: transparent;
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center; }
+              body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText p {
+                display: block;
+                margin: 10px;
+                font-size: auto; }
+                body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText p span {
+                  font-size: 10px; }
+                  body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText p span i {
+                    margin: 10px;
+                    color: white; }
+              body #portfolio .firstBox .rightSide .top .imgBox5 .overlayText h1 {
+                font-weight: bold; }
+            body #portfolio .firstBox .rightSide .top .imgBox5:hover .overlay {
+              opacity: .9;
+              transition: opacity .5s; }
+              body #portfolio .firstBox .rightSide .top .imgBox5:hover .overlay .overlayText {
+                display: block; }
+              body #portfolio .firstBox .rightSide .top .imgBox5:hover .overlay .overlayButton {
+                margin: auto;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: red;
+                color: white;
+                padding: 10 15%;
+                border: 1px solid darkred;
+                box-shadow: 2px 2px 2px black;
+                border-radius: 5px;
+                outline: none; }
+        body #portfolio .firstBox .rightSide .bottom .imgBox6 {
+          width: 100%;
+          height: auto;
+          position: relative; }
+          body #portfolio .firstBox .rightSide .bottom .imgBox6 img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover; }
+          body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlay {
+            position: absolute;
+            display: block;
+            margin: auto;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: red; }
+          body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText {
+            display: none;
+            margin: auto;
+            background-color: transparent;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+            body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText p {
+              display: block;
+              margin: 10px;
+              font-size: auto; }
+              body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText p span {
+                font-size: 10px; }
+                body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText p span i {
+                  margin: 10px;
+                  color: white; }
+            body #portfolio .firstBox .rightSide .bottom .imgBox6 .overlayText h1 {
+              font-weight: bold; }
+          body #portfolio .firstBox .rightSide .bottom .imgBox6:hover .overlay {
+            opacity: .9;
+            transition: opacity .5s; }
+            body #portfolio .firstBox .rightSide .bottom .imgBox6:hover .overlay .overlayText {
+              display: block; }
+            body #portfolio .firstBox .rightSide .bottom .imgBox6:hover .overlay .overlayButton {
+              margin: auto;
+              font-size: 25px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 10 15%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+    body #portfolio .secondBox {
+      width: 100%;
+      display: flex;
+      padding-bottom: 5%; }
+      @media (max-width: 990px) {
+        body #portfolio .secondBox {
+          display: block;
+          width: 100%; } }
+      body #portfolio .secondBox .leftSide {
+        width: 50%;
+        display: block; }
+        @media (max-width: 990px) {
+          body #portfolio .secondBox .leftSide {
+            width: 100%; } }
+        body #portfolio .secondBox .leftSide .top .imgBox7 {
+          width: 100%;
+          height: auto;
+          position: relative; }
+          body #portfolio .secondBox .leftSide .top .imgBox7 img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover; }
+          body #portfolio .secondBox .leftSide .top .imgBox7 .overlay {
+            position: absolute;
+            display: block;
+            margin: auto;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: red; }
+          body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText {
+            display: none;
+            margin: auto;
+            background-color: transparent;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+            body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText p {
+              display: block;
+              margin: 10px;
+              font-size: auto; }
+              body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText p span {
+                font-size: 10px; }
+                body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText p span i {
+                  margin: 10px;
+                  color: white; }
+            body #portfolio .secondBox .leftSide .top .imgBox7 .overlayText h1 {
+              font-weight: bold; }
+          body #portfolio .secondBox .leftSide .top .imgBox7:hover .overlay {
+            opacity: .9;
+            transition: opacity .5s; }
+            body #portfolio .secondBox .leftSide .top .imgBox7:hover .overlay .overlayText {
+              display: block; }
+            body #portfolio .secondBox .leftSide .top .imgBox7:hover .overlay .overlayButton {
+              margin: auto;
+              font-size: 25px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 10 15%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+        body #portfolio .secondBox .leftSide .bottom {
+          display: flex; }
+          @media (max-width: 736px) {
+            body #portfolio .secondBox .leftSide .bottom {
+              display: block; } }
+          body #portfolio .secondBox .leftSide .bottom .imgBox8 {
+            width: 100%;
+            height: auto;
+            position: relative; }
+            body #portfolio .secondBox .leftSide .bottom .imgBox8 img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover; }
+            body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlay {
+              position: absolute;
+              display: block;
+              margin: auto;
+              left: 0px;
+              top: 0px;
+              bottom: 0px;
+              right: 0px;
+              width: 100%;
+              height: auto;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: red; }
+            body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText {
+              display: none;
+              margin: auto;
+              background-color: transparent;
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center; }
+              body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText p {
+                display: block;
+                margin: 10px;
+                font-size: auto; }
+                body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText p span {
+                  font-size: 10px; }
+                  body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText p span i {
+                    margin: 10px;
+                    color: white; }
+              body #portfolio .secondBox .leftSide .bottom .imgBox8 .overlayText h1 {
+                font-weight: bold; }
+            body #portfolio .secondBox .leftSide .bottom .imgBox8:hover .overlay {
+              opacity: .9;
+              transition: opacity .5s; }
+              body #portfolio .secondBox .leftSide .bottom .imgBox8:hover .overlay .overlayText {
+                display: block; }
+              body #portfolio .secondBox .leftSide .bottom .imgBox8:hover .overlay .overlayButton {
+                margin: auto;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: red;
+                color: white;
+                padding: 10 15%;
+                border: 1px solid darkred;
+                box-shadow: 2px 2px 2px black;
+                border-radius: 5px;
+                outline: none; }
+          body #portfolio .secondBox .leftSide .bottom .imgBox9 {
+            width: 100%;
+            height: auto;
+            position: relative; }
+            body #portfolio .secondBox .leftSide .bottom .imgBox9 img {
+              width: 100%;
+              height: 400px;
+              object-fit: cover; }
+            body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlay {
+              position: absolute;
+              display: block;
+              margin: auto;
+              left: 0px;
+              top: 0px;
+              bottom: 0px;
+              right: 0px;
+              width: 100%;
+              height: auto;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: red; }
+            body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText {
+              display: none;
+              margin: auto;
+              background-color: transparent;
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center; }
+              body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText p {
+                display: block;
+                margin: 10px;
+                font-size: auto; }
+                body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText p span {
+                  font-size: 10px; }
+                  body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText p span i {
+                    margin: 10px;
+                    color: white; }
+              body #portfolio .secondBox .leftSide .bottom .imgBox9 .overlayText h1 {
+                font-weight: bold; }
+            body #portfolio .secondBox .leftSide .bottom .imgBox9:hover .overlay {
+              opacity: .9;
+              transition: opacity .5s; }
+              body #portfolio .secondBox .leftSide .bottom .imgBox9:hover .overlay .overlayText {
+                display: block; }
+              body #portfolio .secondBox .leftSide .bottom .imgBox9:hover .overlay .overlayButton {
+                margin: auto;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: red;
+                color: white;
+                padding: 10 15%;
+                border: 1px solid darkred;
+                box-shadow: 2px 2px 2px black;
+                border-radius: 5px;
+                outline: none; }
+      body #portfolio .secondBox .rightSide {
+        width: 50%; }
+        @media (max-width: 990px) {
+          body #portfolio .secondBox .rightSide {
+            display: block;
+            width: 100%; } }
+        body #portfolio .secondBox .rightSide .imgBox10 {
+          width: 100%;
+          height: auto;
+          position: relative; }
+          body #portfolio .secondBox .rightSide .imgBox10 img {
+            width: 100%;
+            height: 800px;
+            object-fit: cover; }
+          body #portfolio .secondBox .rightSide .imgBox10 .overlay {
+            position: absolute;
+            display: block;
+            margin: auto;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: red; }
+          body #portfolio .secondBox .rightSide .imgBox10 .overlayText {
+            display: none;
+            margin: auto;
+            background-color: transparent;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+            body #portfolio .secondBox .rightSide .imgBox10 .overlayText p {
+              display: block;
+              margin: 10px;
+              font-size: auto; }
+              body #portfolio .secondBox .rightSide .imgBox10 .overlayText p span {
+                font-size: 10px; }
+                body #portfolio .secondBox .rightSide .imgBox10 .overlayText p span i {
+                  margin: 10px;
+                  color: white; }
+            body #portfolio .secondBox .rightSide .imgBox10 .overlayText h1 {
+              font-weight: bold; }
+          body #portfolio .secondBox .rightSide .imgBox10:hover .overlay {
+            opacity: .9;
+            transition: opacity .5s; }
+            body #portfolio .secondBox .rightSide .imgBox10:hover .overlay .overlayText {
+              display: block; }
+            body #portfolio .secondBox .rightSide .imgBox10:hover .overlay .overlayButton {
+              margin: auto;
+              font-size: 25px;
+              font-weight: bold;
+              background-color: red;
+              color: white;
+              padding: 10 15%;
+              border: 1px solid darkred;
+              box-shadow: 2px 2px 2px black;
+              border-radius: 5px;
+              outline: none; }
+  body #about {
+    background-color: #EFEFEF;
+    width: 100%;
+    padding-bottom: 5%; }
+    body #about .aboutTitle {
+      text-align: center;
+      margin: auto; }
+    body #about .aboutText {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      padding: 1% 25%; }
+    body #about #aboutBtn {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding-bottom: 5%; }
+      @media (max-width: 410px) {
+        body #about #aboutBtn {
+          flex-direction: column;
+          width: 50%; } }
+      body #about #aboutBtn .aboutMore {
+        margin: 10px;
+        padding: 0px 15px;
+        border: 1px solid grey;
+        box-shadow: 2px 2px 2px;
+        border-radius: 4px; }
+      body #about #aboutBtn .aboutServices {
+        margin: 10px;
+        background-color: darkred;
+        color: white;
+        border: 1px solid red;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 4px; }
+    body #about #links {
+      width: 90%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      margin: auto; }
+      @media (max-width: 990px) {
+        body #about #links {
+          flex-direction: column;
+          align-items: center; } }
+      body #about #links .aboutLinks {
+        width: 15%;
+        display: flex;
+        margin: auto; }
+        @media (max-width: 990px) {
+          body #about #links .aboutLinks {
+            padding-bottom: 10%; } }
+        @media (max-width: 410px) {
+          body #about #links .aboutLinks {
+            display: block;
+            margin: auto; } }
+        body #about #links .aboutLinks .aboutLink {
+          padding: 25px 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: darkred;
+          color: white;
+          border-radius: 50%;
+          margin: auto; }
+          @media (max-width: 410px) {
+            body #about #links .aboutLinks .aboutLink {
+              padding: 15px 25px; } }
+        body #about #links .aboutLinks p {
+          color: grey;
+          margin-left: 5px; }
+          body #about #links .aboutLinks p i {
+            margin: auto; }
+          body #about #links .aboutLinks p span {
+            font-weight: bold;
+            color: black;
+            font-size: 22px; }
+  body #footerTop {
+    width: 100%;
+    background-color: darkred;
+    padding: 5%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+    body #footerTop h2 {
+      font-size: 40px;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 30px;
+      color: white; }
+    body #footerTop p {
+      width: 50%;
+      color: grey;
+      text-align: center;
+      margin: auto;
+      padding: 2% 0; }
+    body #footerTop button {
+      margin-top: 2%;
+      font-size: 10px;
+      font-weight: bold;
+      background-color: red;
+      color: white;
+      padding: 1% 2%;
+      border: 1px solid darkred;
+      box-shadow: 2px 2px 2px black;
+      border-radius: 5px;
+      outline: none;
+      margin: auto; }
+    body #footerTop .form {
+      width: 100%; }
+      body #footerTop .form .navbar {
+        width: 100%;
+        background-color: darkred !important;
+        display: flex;
+        justify-content: center; }
+        body #footerTop .form .navbar input::placeholder {
+          font-size: 20px; }
+        body #footerTop .form .navbar button {
+          margin: auto;
+          padding: 6px 20px;
+          font-size: 15px;
+          background-color: #363636;
+          color: white;
+          border: 1px solid #363636; }
+  body footer {
+    padding: 3%;
+    text-align: center; }
+    body footer .socialMediaLinks {
+      padding: 20px; }
+      body footer .socialMediaLinks a {
+        color: grey;
+        margin: 10px; }
+    body footer .copyright {
+      font-size: 13px; }
+
+/*# sourceMappingURL=home.css.map */

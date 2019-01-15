@@ -1,0 +1,188 @@
+@import 'mixins';
+@import 'variables';
+
+
+@include intro;
+
+#aboutUs{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	height:auto;
+	padding-bottom:5%;
+	@include aboutUsResponsive;
+
+	.aboutUsLeft{
+		width:50%;
+		padding:8%;
+		display: flex;
+    	flex-direction: column;
+   		justify-content: center;
+		@include aboutUsResponsive;
+
+		.aboutUsText{
+			font-size:21px;
+			padding:5% 0%;
+			p{
+				margin-left: 20px;
+			  @include entryTitle;
+			}
+			span{
+				font-weight:bold;
+				color:black;
+			} 
+		}	
+		button{
+				width:20%;
+				font-size:10px;
+				font-weight:bold;
+				background-color:$redBackground;
+				color:white;
+				padding:1% 0%;
+				border:1px solid red;
+				box-shadow: 2px 2px 2px black;
+				border-radius:5px;
+				@include aboutUsResponsive;
+			}
+
+	}	
+	.skills{
+		width:50%;
+		padding:5% 5%;
+		margin:auto;
+		p{
+		margin:0;
+		font-size:15px;
+		}
+		.progress{
+			.progress-bar{
+				padding:0px;
+				margin:0px;
+				background-color:red;
+			}
+		}
+	}
+} 
+
+#about{
+	padding:10% 0%;
+}
+
+#team{
+	display:flex;
+	width:100%;
+	height:auto;
+	@media screen and(max-width:1200px){
+		flex-direction: column;
+	}
+	
+
+	.leftSide{
+		width:50%;
+		margin:auto;
+		@media screen and(max-width:1200px){
+			width:100%;
+			text-align:center;
+			margin:auto;
+		}
+
+		
+		.content{
+			display:flex;
+			flex-direction:column;
+			padding:10% 0%;
+		
+				p{
+					font-size:20px;
+					margin-left: 120px;
+
+					&:nth-child(1){
+						margin-left: 130px;
+						@include entryTitle;
+					}
+					@media screen and(max-width:1200px){
+						flex-direction:column;
+						text-align: center;
+						margin:auto;
+						justify-content: center;
+						word-wrap:break-word;
+							&:nth-child(1){
+							margin:auto;
+							}
+					}	
+				}
+
+				span{
+					font-weight: bold;
+				}
+
+				.teamImages{
+					display:flex;
+					flex-direction:row;	
+					justify-content: center;
+					margin:auto;
+					@media screen and(max-width:768px){
+						flex-direction:column;
+						}				
+				
+					.imgBox1{
+						margin:15px;
+						height:auto;
+						position:relative;
+						img{
+							object-fit:cover;
+							width:150px;
+							height:150px;
+							border-radius:10px;
+						}
+							@include Overlay;
+					}
+					.imgBox2{
+						margin:15px;
+						height:auto;
+						position:relative;
+
+						img{
+							object-fit:cover;
+							width:150px;
+							height:150px;
+							border-radius:10px;
+						}
+							@include Overlay;
+
+					}
+					.imgBox3{
+						margin:15px;
+						height:auto;
+						position:relative;
+
+						img{
+							object-fit:cover;
+							width:150px;
+							height:150px;
+							border-radius:10px;
+						}
+							@include Overlay;
+					}	
+				}
+			}	
+		}
+	.rightSide{
+		width:50%;
+		@media screen and(max-width:1200px){
+			width:100%;
+		}
+
+		.imgBox4{
+			width:100%;
+			height:auto;
+			position:relative;
+			img{
+				object-fit: cover;
+				width:100%;
+			}
+			@include Overlay;
+		}
+	}
+}
+

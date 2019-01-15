@@ -1,0 +1,279 @@
+@import 'mixins';
+@import 'variables';
+
+body{
+	margin:0px;
+	color:#363636;
+	font-size:15px;
+	line-height:25px;
+	font-family:'Montserrat', sans-serif;
+	box-sizing:border-box;
+
+@include header;	
+
+#portfolio{
+	width:100%;
+	height:auto;
+	text-align: center;
+	margin-bottom: 5%;
+	display:block;
+	
+	.firstBox{
+		display:flex;
+		flex-direction:row;
+		width:100%;
+		@media (max-width: 990px){
+		 	display:block;
+		}
+	
+		.leftSide{
+			width:50%;
+			@media (max-width: 990px){
+			 	display:block;
+			 	width:100%;
+			}
+
+			.top{
+				display:flex;
+
+				.imgBox1{
+					width:100%;
+					height:auto;
+					position:relative;
+					img{
+						width:100%;
+						height:400px;
+						object-fit:cover;
+					}
+					@include Overlay;
+				}
+			}
+			.bottom{
+				display:flex;
+				@media (max-width: 736px){
+			 	display:block;
+				}
+
+				.imgBox2{
+					width:100%;
+					height:auto;
+					position:relative;
+					img{
+						width:100%;
+						height:400px;
+						object-fit:cover;
+					}
+					@include Overlay;
+				}
+				.imgBox3{
+					width:100%;
+					height:auto;
+					position:relative;
+					img{
+						width:100%;
+						height:400px;
+						object-fit:cover;
+					}
+					@include Overlay;
+				}
+			}
+		}
+
+		.rightSide{
+			display:block;
+			width:50%;
+			@media (max-width: 990px){
+			 	width:100%;
+			}
+			
+
+			.top{
+				display:flex;
+				flex-direction:row;
+				@media (max-width: 736px){
+			 		display:block;
+				}
+				
+
+
+				.imgBox4{
+					width:100%;
+					height:auto;
+					position:relative;
+					img{
+						width:100%;
+						height:400px;
+						object-fit:cover;
+					}
+					@include Overlay;
+				}
+
+				.imgBox5{
+					width:100%;
+					height:auto;
+					position:relative;
+					img{
+						width:100%;
+						height:400px;
+						object-fit:cover;
+					}
+					@include Overlay;
+				}
+			}
+			.bottom{
+
+				.imgBox6{
+					width:100%;
+					height:auto;
+					position:relative;
+					img{
+						width:100%;
+						height:400px;
+						object-fit:cover;
+					}
+					@include Overlay;
+				}
+			}
+		}
+	}
+
+	.secondBox{
+		width:100%;
+		display:flex;
+		padding-bottom:5%;
+		@media (max-width: 990px){
+		 	display:block;
+		 	width:100%;
+		}
+
+		.leftSide{
+			width:50%;
+			display:block;
+			@media (max-width: 990px){
+			 	width:100%;
+			}
+			
+			.top{
+				
+				.imgBox7{
+					width:100%;
+					height:auto;
+					position:relative;
+					img{
+						width:100%;
+						height:400px;
+						object-fit:cover;
+					}
+					@include Overlay;
+				}
+			}
+			.bottom{
+				display:flex;
+				@media (max-width: 736px){
+			 		display:block;
+				}
+				
+				.imgBox8{
+					width:100%;
+					height:auto;
+					position:relative;
+					img{
+						width:100%;
+						height:400px;
+						object-fit:cover;
+					}
+					@include Overlay;
+				}
+
+				.imgBox9{
+					width:100%;
+					height:auto;
+					position:relative;
+					img{
+						width:100%;
+						height:400px;
+						object-fit:cover;
+					}
+					@include Overlay;
+					
+				}
+			}
+		}
+
+		.rightSide{
+			width:50%;
+			@media (max-width: 990px){
+			 	display:block;
+			 	width:100%;
+			}
+			
+			.imgBox10{
+				width:100%;
+				height:auto;
+				position:relative;
+					img{
+						width:100%;
+						height:800px;
+						object-fit:cover;
+				}
+				@include Overlay;
+			}
+		}
+	}
+}
+
+#about{
+	background-color:$greyBackground;
+	width:100%;
+	padding-bottom:5%;
+
+	.aboutTitle{
+		text-align:center;
+		margin:auto;
+	}
+	.aboutText{
+		width:100%;
+		text-align:center;
+		margin:auto;
+		padding:1% 25%;
+
+	}
+	#aboutBtn{
+		display:flex;
+		justify-content:center;
+		text-align:center;
+		margin:auto;
+		padding-bottom:5%;
+		@media (max-width:410px){
+				flex-direction: column;
+				width:50%;
+				
+			}
+
+		.aboutMore{
+			margin:10px;
+			padding:0px 15px;
+			border:1px solid grey ;
+			box-shadow:2px 2px 2px;
+			border-radius:4px;
+
+		}
+		.aboutServices{
+			margin:10px;
+			background-color:$redBackground;
+			color:white;
+			border:1px solid red ;
+			box-shadow: 2px 2px 2px black;
+			border-radius:4px;
+
+		}
+	}
+
+@include Links;
+}
+
+@include footerTop;	
+
+@include footer; 
+
+}

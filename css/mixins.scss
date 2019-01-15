@@ -1,0 +1,339 @@
+
+@mixin header{
+		header{
+		width:100%;
+		display:flex;
+		justify-content:center;
+
+		#logo{
+			text-align:center;
+			margin:auto;
+			margin-top:15%;
+
+			.navbar-brand{	
+				color:white;
+				background-color:$redBackground;
+				margin:auto;
+				padding:15px 15px;
+	   			border-radius: 50%;
+	   			font-size: 33px;
+			}
+			.logoText{
+			text-align:center;
+			}
+		}	
+		.nav{
+			margin-top:3%;
+
+			.nav-link{
+				color:black;
+				text-decoration:none;
+				font-weight:bold;
+
+				&:hover{
+					color:$redBackground;
+				}
+			}
+		}
+		.headerBtn{
+			display:flex;
+			justify-content:center;
+			margin:3%;
+
+			button{
+				border:1px solid grey ;
+				background-color:transparent;
+				margin:10px;
+				padding:2px 10px;
+				border-radius:4px;
+				outline:none;
+
+				i{
+					color:grey;
+				}
+			}
+		}
+	}
+}
+
+@mixin Overlay {
+	
+	.overlay{
+		position:absolute;
+		display:block;
+		margin:auto;
+		left:0px;
+		top:0px;
+		bottom:0px;
+		right:0px;
+		width:100%;
+		height:auto;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: red;			
+		}	
+		.overlayText{
+			display:none;
+			margin:auto;
+			background-color:transparent;
+			color: white;
+			position: absolute;
+			top: 50%;
+			left:50%;
+			transform: translate(-50%, -50%);
+		 	text-align: center;
+		 	p{
+		 		display:block;
+		 		margin:10px;
+		 		font-size:auto;
+		 		span{
+		 		font-size:10px;
+		 			i{
+		 			margin:10px;
+		 			color:white;
+		 			}
+		 		}
+		 	}
+		 	h1{
+		 	font-weight:bold;
+		 	}
+		}
+		&:hover{
+			.overlay{
+				opacity: .9;
+		      	transition: opacity .5s;
+		      	.overlayText{
+		      		display:block;
+		      	}
+		      	.overlayButton{
+		      		margin:auto;
+				    font-size: 25px;
+				    font-weight: bold;
+				    background-color: red;
+				    color: white;
+				    padding:10 15%;
+				    border: 1px solid $redBackground;
+				    box-shadow: 2px 2px 2px black;
+				    border-radius: 5px;
+				    outline: none;
+		      	}
+			}
+		}
+	}
+
+
+@mixin intro {
+	.intro{
+		background-color:$redBackground;
+		color:white;
+		text-align: center;
+		padding:5%;
+
+		h1{
+		    font-weight: bold;
+		   }
+	} 
+}
+
+@mixin Links{
+	#links{
+		width:90%;
+		height:auto;
+		display:flex;
+		flex-direction:row;
+		margin:auto;
+		@media (max-width:990px){
+			flex-direction: column;
+			align-items:center;
+		}
+
+		.aboutLinks{
+			width:15%;
+			display:flex;
+			margin:auto;
+			@media (max-width:990px){
+				padding-bottom:10%;
+			}
+			@media (max-width:410px){
+				display:block;
+				margin:auto;
+			}
+
+			.aboutLink{
+				padding:25px 25px;
+				display:flex;
+				justify-content: center;
+				align-items:center;
+				background-color:$redBackground;
+				color:white;
+				border-radius:50%;
+				margin:auto;
+				@media (max-width:410px){
+					padding:15px 25px;
+				}
+			}
+				p{
+				color:grey;
+				margin-left:5px;
+					i{
+					margin:auto;
+					}
+				
+				span{
+					font-weight:bold;
+					color:black;
+					font-size:22px;
+				 }
+			}
+		}
+	}
+}
+@mixin entryTitle{
+	font-size:15px;
+		&:before{
+			 content: "\2022";
+			 color:$redBackground;
+			 font-size: 20px;
+			 font-weight: bold;
+			 display: inline-block; 
+			 width: 10px;
+			 margin-left: -1em;
+				}
+}
+@mixin partners{
+	#partners{
+	background-color:$greyBackground;
+    display: flex;
+    padding: 5%;
+	 @media (max-width:736px){
+    	 flex-direction:column;
+    	 align-items: center;
+    }
+  
+
+    .icon{
+    	display:flex;
+    	flex-wrap:wrap;
+    	width:10%;
+    	margin:auto;
+    	font-weight: bold;
+    	 @media (max-width:736px){
+    	 	display: block;
+    	 	width:100%;
+    		margin:5% 0%;
+    		text-align: center;
+    		justify-content: center;
+   		 }
+    	}
+	}
+}
+
+@mixin footerTop {
+	#footerTop{
+	width:100%;
+	background-color:darkred;
+	padding:5%;
+	height:auto;
+	display:flex;
+	flex-direction: column;
+	margin:auto;
+
+	h2{
+		font-size:40px;
+		margin:auto;
+		text-align:center;
+		padding-bottom:30px;
+		color:white;
+	}
+	p{
+		width:50%;
+		color:grey;
+		text-align: center;
+		margin: auto;
+    	padding:2% 0 ;
+	}
+
+	button{
+		margin-top:2%;
+		font-size:10px;
+		font-weight:bold;
+		background-color:red;
+		color:white;
+		padding:1% 2%;
+		border:1px solid darkred;
+		box-shadow: 2px 2px 2px black;
+		border-radius:5px;
+		outline:none;
+		margin: auto;
+	}
+	.form{
+		width:100%;
+		.navbar{
+			width:100%;
+			background-color:darkred!important;
+			display:flex;
+			justify-content:center;
+		
+			input{
+				&::placeholder{
+					font-size: 20px;
+				}
+			}
+			button{
+				margin:auto;
+    			padding: 6px 20px;
+    			font-size:15px;
+    			background-color:#363636;
+    			color:white;
+    			border:1px solid #363636;
+			}
+		}
+	}
+}
+}
+
+@mixin footer{
+	footer {
+		padding: 3%;
+    	text-align: center;
+
+    	.socialMediaLinks{
+    		padding:20px;
+			a{
+				color:grey;
+				margin:10px;
+			}    	
+    	}
+    	.copyright{
+    		font-size:13px;
+    	}
+	}
+}
+
+@mixin aboutUsResponsive{
+
+	@media screen and(max-width:768px){
+		display:block;
+		width:100%;
+		margin:auto;
+		}
+}
+
+
+
+@mixin servicesResponsive{
+
+	@media screen and(max-width:1400px){
+		flex-direction:column;
+		width:100%;
+	}
+}
+@mixin servicesIcons{
+	@media screen and(max-width:990px){
+		flex-direction:column;
+		width:100%;
+		margin:auto;
+	}
+
+}
+
