@@ -1,5 +1,5 @@
-@import 'mixins';
-@import 'variables';
+//@import 'mixins';
+//@import 'variables';
 
 #services{
 	@include intro;
@@ -104,9 +104,8 @@
     	.clients__text__quote{
     		i{
     			color:$redBackground;
-    			width:50%;
     			display:flex;
-    			justify-content: flex-start;
+    			margin-right:auto;
     			padding-bottom:1%;
     		}
     	}
